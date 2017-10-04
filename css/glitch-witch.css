@@ -1,12 +1,13 @@
 /*Page width and position*/
 #page{
-    width: 960px;
+    width: 100%;
     margin: 0px auto;
 }
+
 /*Navigation Positioning*/ 
 nav {
     overflow: hidden;
-    width: 960px;
+    width: 80%;
     margin: 0px auto;
 }
 
@@ -20,12 +21,12 @@ nav a{
 /*Banner Size and Positioning*/
 #banner{
     margin: 0px auto;
-    width: 700px;
-    height: 400px;
+    width: 512px;
+    height: 378px;
 }
 #banner img{
-    width: 700px;
-    height: 400px;
+    width: 512px;
+    height: 378px;
     margin: 0px auto;
 }
 /*Description Position*/
@@ -34,13 +35,12 @@ nav a{
 }
 
 /*Icon Positioning*/
-
 .icon {
-    width: 300px;
-    height: 300px;
+    width: 90px;
+    height: 90px;
     background-color: cadetblue;
-    display: inline-block;
     margin: 0px auto;
+    display: inline-block;
 }
 
 /*Trial Styling*/
