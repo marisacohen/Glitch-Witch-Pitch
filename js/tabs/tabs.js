@@ -10,10 +10,12 @@ $('.character-nav').each(function(){               // Find lists of tabs
         id = this.hash;                          // Get href of clicked tab 
 
     if (id && !$link.is('.active')) {           // If not currently active
-      $tab.removeClass('active');                 // Make tab inactive
-      $panel.removeClass('active');               // Make panel inactive
         $tab = $link.parent().toggleClass('active');   // Toggles between tabs with active class
       $panel = $(id).toggleClass('active');        // Toggles between panels with active class
+        
+        $tab.siblings().removeClass('active');                 // Make sibling tabs inactive
+      $panel.siblings().removeClass('active');               // Make sibling panels inactive
     }
+         
   });
 });
