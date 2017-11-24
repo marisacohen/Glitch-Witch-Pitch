@@ -1,7 +1,16 @@
+body{
+	background-color: #0d0e10;
+	color: white;
+}
 /*Page width and position*/
 #page{
     width: 100%;
     margin: 0px auto;
+}
+
+#content{
+	width: 80%;
+	margin: 0px auto;
 }
 
 /*Navigation Positioning*/ 
@@ -32,15 +41,19 @@ nav a{
 /*Description Position*/
 #description {
     text-align: center;
+	color: white;
 }
 
 /*Icon Positioning*/
-.icon {
-    width: 90px;
-    height: 90px;
-    background-color: cadetblue;
-    margin: 0px auto;
-    display: inline-block;
+
+.btn a img {
+	width: 20%;
+	height: 20%;
+	margin: 0px auto;
+    /*margin: 0px auto;*/
+	padding: 2px;
+	float: left;
+	
 }
 
 /*Trial Styling*/
