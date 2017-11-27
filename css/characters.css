@@ -13,10 +13,10 @@
 }
 
 .character-nav li img{
-    width: 50px;
-    height: 50px;
-    border: 2px solid black;
-    border-radius: 75px;
+	width: 60px;
+	height: 60px;
+	border: 2px solid black;
+	border-radius: 75px;
 }
 
 .character-nav li a{
@@ -25,11 +25,14 @@
     border-radius: 75px;
 }
 
+
 /*Hover State*/
 .character-nav li.active, .character-nav li:hover {
-    background-color: cornflowerblue;
+	background-color: #61468D;
 }
-
+.character-nav li.active, .character-nav li:active {
+	background-color: #371E64;
+}
 /*Panels*/
 .tab-panel {
     display: none;
@@ -38,12 +41,13 @@
 }
 
 .tab-panel.active {
-    display: block;
-    background-color: cornflowerblue;
+	display: block;
+	background-color: #371E64;
 }
 
 .tab-panel p {
-    margin: 20px;
+	margin: 20px;
+	color: undefined;
 }
 
 //Media Query
