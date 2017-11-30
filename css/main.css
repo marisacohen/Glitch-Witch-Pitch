@@ -62,6 +62,7 @@ li {
 	text-align: left;
 	color: #7BCBA4;
 	position: absolute;
+	left: 10px;
     bottom: 10px;
     z-index: -1;
 }
