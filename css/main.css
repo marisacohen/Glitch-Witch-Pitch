@@ -49,11 +49,11 @@ li {
 	height: 91.6%;
 }
 #banner img{
-	width: 80.6%;
-	/*height: 91.6%;*/
+	width: 59.6%;
+	height: 91.6%;
 	margin: 0px auto;
 	position: absolute;
-    left: 10px;
+    left: 20px;
     top: 0px;
     z-index: -1;
 }
@@ -62,7 +62,7 @@ li {
 	text-align: left;
 	color: #7BCBA4;
 	position: absolute;
-	left: 10px;
+	left: 40px;
     bottom: 10px;
     z-index: -1;
 }
@@ -70,8 +70,10 @@ li {
 /*Icon Positioning*/
 
 .btn{
-	/*width: %;*/
-	float: right;
+	width: 59.6%;
+	position: relative;
+	left: 62%;
+	top: 100px;
 	margin: 10px 5px 2px 0px;
 }
 
@@ -81,8 +83,7 @@ li {
 	padding-top: 6;
 	padding-right: 6;
 	padding-left: 6;
-	padding-bottom: 6;
-	float: right;	
+	padding-bottom: 6;	
 }
 
 .btn a img:hover
