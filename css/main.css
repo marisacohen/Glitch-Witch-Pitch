@@ -59,6 +59,7 @@ li {
 	height: 91.6%;*/
 	width: 75%;
 	/*height: 75%;*/
+	height: auto;
 	margin: 0px auto;
 	position: absolute;
     left: 20px;
@@ -70,7 +71,7 @@ li {
 #description {
 	text-align: left;
 	color: #7BCBA4;
-	position: absolute;
+	position: relative;
 	left: 40px;
     bottom: -10px;
     z-index: -1;
