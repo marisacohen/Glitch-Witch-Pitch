@@ -71,7 +71,7 @@ li {
 #description {
 	text-align: left;
 	color: #7BCBA4;
-	position: relative;
+	position: absolute;
 	left: 40px;
     bottom: -10px;
     z-index: -1;
