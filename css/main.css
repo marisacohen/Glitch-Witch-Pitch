@@ -8,6 +8,10 @@ body{
     
 }
 
+content{
+	width: 59.6%;
+}
+
 /*Navigation Positioning*/ 
 nav {
     overflow: hidden;
@@ -43,27 +47,29 @@ ul{
 li {
 	display: inline;
 }
-/*Banner Size and Positioning*/
-#banner{
-   width: 59.6%;
-	height: 91.6%;
+/*Image Size and Positioning*/
+
+#glitch-witch-image{
+   width: 39.6%;
+	height: 61.6%;
 }
-#banner img{
-	width: 59.6%;
-	height: 91.6%;
+#glitch-witch-image img{
+	width: 39.6%;
+	height: 61.6%;
 	margin: 0px auto;
 	position: absolute;
-    left: 20px;
-    top: 0px;
+    left: 220px;
+    top: 100px;
     z-index: -1;
 }
 /*Description Position*/
 #description {
+	width: 40%;
 	text-align: left;
 	color: #7BCBA4;
 	position: absolute;
-	left: 40px;
-    bottom: 10px;
+	left: 280px;
+    bottom: 55px;
     z-index: -1;
 }
 
@@ -72,7 +78,7 @@ li {
 .btn{
 	width: 59.6%;
 	position: relative;
-	left: 62%;
+	left: 72%;
 	top: 100px;
 	margin: 10px 5px 2px 0px;
 }
