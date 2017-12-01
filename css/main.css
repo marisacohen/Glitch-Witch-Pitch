@@ -50,26 +50,27 @@ li {
 /*Image Size and Positioning*/
 
 #glitch-witch-image{
-   width: 39.6%;
-	height: 61.6%;
+  width: 59.6%;
+	height: 91.6%;
 }
 #glitch-witch-image img{
-	width: 39.6%;
-	height: 61.6%;
+	width: 59.6%;
+	height: 91.6%;
 	margin: 0px auto;
 	position: absolute;
-    left: 220px;
-    top: 100px;
+    left: 40px;
+    top: 0px;
     z-index: -1;
 }
+
 /*Description Position*/
 #description {
-	width: 40%;
+	width: 50%;
 	text-align: left;
 	color: #7BCBA4;
 	position: absolute;
-	left: 280px;
-    bottom: 55px;
+	left: 200px;
+    bottom: 10px;
     z-index: -1;
 }
 
@@ -97,4 +98,25 @@ li {
         -webkit-transform: scale(1.4);
         -ms-transform: scale(1.4);
         transform: scale(1.4);
+}
+
+@media (max-width:800px){
+	#glitch-witch-image img, #description {
+		width: 50%;
+		height: 89%;
+}
+@media (max-width:600px){
+	#glitch-witch-image img, #description {
+		width: 40%;
+		height: 79%;
+}
+@media (max-width:400px){
+	#glitch-witch-image img, #description {
+		width: 30%;
+		height: 69%;
+}
+@media (max-width:200px){
+	#glitch-witch-image img, #description {
+		width: 20%;
+		height: 59%;
 }
