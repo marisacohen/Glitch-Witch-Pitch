@@ -5,12 +5,13 @@ body{
 /*Page width and position*/
 #page{
     width: 100%;
-	margin: 0px auto;
     
 }
 
-content{
-	width: 59.6%;
+#content{
+	/*width: 59.6%;*/
+	width: 100%;
+	
 }
 
 /*Navigation Positioning*/ 
@@ -31,6 +32,9 @@ nav a{
 nav a img{
 	width: 5%;
 	height: 5%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-top: 3%;
 }
 
 nav a img:hover{
@@ -48,81 +52,26 @@ ul{
 li {
 	display: inline;
 }
-/*Image Size and Positioning*/
-
-#glitch-witch-image{
-  width: 75%;
+/*Banner Size and Positioning*/
+#banner{
+   width: 59.6%;
 	height: 91.6%;
-}
-#glitch-witch-image img{
-	display: block;
-	/*width: 59.6%;
-	height: 91.6%;*/
-	width: 75%;
-	/*height: 75%;*/
-	height: auto;
 	margin: 0px auto;
-	position: absolute;
-    left: 20px;
-    top: 0;
-	bottom: 0;
+	text-align: center;
+}
+#banner img{
+	width: 400px;
+	height: 91.6%;
+	text-align: center;
+	margin: 0px auto;
+    left: 0px;
+    top: 0px;
     z-index: -1;
 }
-
 /*Description Position*/
 #description {
 	text-align: left;
 	color: #7BCBA4;
-	position: relative;
-	left: 40px;
-    bottom: -10px;
+    bottom: 10px;
     z-index: -1;
 }
-
-/*Icon Positioning*/
-
-.btn{
-	width: 59.6%;
-	position: relative;
-	left: 79%;
-	top: 0;
-	bottom 0;
-	margin: 10px 5px 2px 0px;
-}
-
-.btn a img {
-	width: 22.3%;
-	height: 10.2%;
-	padding-top: 6;
-	padding-right: 6;
-	padding-left: 6;
-	padding-bottom: 6;	
-}
-
-.btn a img:hover
-{
-        -webkit-transform: scale(1.4);
-        -ms-transform: scale(1.4);
-        transform: scale(1.4);
-}
-
-/*@media (max-width:800px){
-	#glitch-witch-image img, #description {
-		width: 50%;
-		height: 89%;
-}
-@media (max-width:600px){
-	#glitch-witch-image img, #description {
-		width: 40%;
-		height: 79%;
-}
-@media (max-width:400px){
-	#glitch-witch-image img, #description {
-		width: 30%;
-		height: 69%;
-}
-@media (max-width:200px){
-	#glitch-witch-image img, #description {
-		width: 20%;
-		height: 59%;
-}*/
