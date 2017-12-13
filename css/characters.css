@@ -47,8 +47,28 @@
 }
 
 .tab-panel p {
+	width: 300px;
 	margin: 20px;
 	color: undefined;
+	position: relative;
+
+	left: 200px;
+}
+
+.character-standing{
+	float: left;
+}
+
+.character-standing img{
+	width: 40%;
+}
+.facial-expressions{
+	position: absolute;
+	left: 200px;
+}
+
+.facial-expressions img{
+	clear: both;
 }
 
 //Media Query
@@ -64,7 +84,24 @@
 
 /*Game Button Link*/
 #characterGameBtn{
-	width: 300px;
 	text-align: center;
 	margin: 0 auto;
+}
+
+#characterGameBtn img{
+	text-align: center;
+	margin: 0 auto;
+	width: 30%;
+}
+
+/*relationship image*/
+#character-relation{
+	margin: 0 auto;
+	text-align: center;
+}
+
+#character-relation img{
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
 }
