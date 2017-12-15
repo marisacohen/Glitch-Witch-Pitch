@@ -29,7 +29,7 @@
 }
 
 .character-nav li {
-	display: inline-block;
+	display: inline;
 }
 
 /*.character-nav {
@@ -43,9 +43,9 @@
     list-style-type: none;
     text-align: center;
     /*width: 200px;
-    height: 200px;*/
-}
-
+    height: 200px;
+}*/
+/*
 .character-nav li img{
 	width: 60px;
 	height: 60px;

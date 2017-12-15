@@ -1,0 +1,26 @@
+/*.character-nav {
+    margin: 0px auto;
+	text-align: center;
+    padding: 0;
+}
+
+.character-nav li {
+    display: inline-block;
+    list-style-type: none;
+    text-align: center;
+    /*width: 200px;
+    height: 200px;
+}*/
+/*
+.character-nav li img{
+	width: 60px;
+	height: 60px;
+	border: 2px solid black;
+	border-radius: 75px;
+}
+
+.character-nav li a{
+    display: block;
+    padding: 3px 10px;
+    border-radius: 75px;
+}*/
