@@ -1,8 +1,38 @@
 /*Tabs Design*/
-.tabs{
-	width: 95%;
+.tabs {
+    overflow: hidden;
+    width: 100%;
+    margin: 0px auto;
+	text-align: center;
+	display: inline-block;
 }
-.character-nav {
+
+.tabs a{
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0px auto;
+}
+
+.tabs a img{
+	width: 5%;
+	height: 5%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-top: 3%;
+}
+
+.character-nav ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.character-nav li {
+	display: inline-block;
+}
+
+/*.character-nav {
     margin: 0px auto;
 	text-align: center;
     padding: 0;
@@ -12,15 +42,13 @@
     display: inline-block;
     list-style-type: none;
     text-align: center;
-    /*width: 20%;
-    height: 20%;*/
+    /*width: 200px;
+    height: 200px;*/
 }
 
 .character-nav li img{
-	width: 10%;
-	height: 10%;
-	/*width: 60px;
-	height: 60px;*/
+	width: 60px;
+	height: 60px;
 	border: 2px solid black;
 	border-radius: 75px;
 }
@@ -29,7 +57,7 @@
     display: block;
     padding: 3px 10px;
     border-radius: 75px;
-}
+}*/
 
 
 /*Hover State*/
