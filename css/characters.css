@@ -41,39 +41,38 @@
 .tab-panel {
     display: none;
     overflow: auto;
+	
 }
 
 .tab-panel.active {
 	display: inline-block;
 	background-color: #371E64;
 	width: 100%;
-	min-height: 100px;
+	/*min-height: 100px;*/
+	position: relative;
 }
 
 .tab-panel p {
 	width: 80%;
-	/*margin: 20px;*/
-	color: undefined;
-	position: relative;
-	bottom: 800px;
-	left: 250px;
-}
+	height: 30%;
+	margin: 0;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-40%, -50%);
+}*
 
 .character-standing img{
 	width: 20%;
 	position: relative;
-	left: -500px;
-	top: 0px;
-}
-
-.facial-expressions{
-	position: relative;
-	bottom: 800px;
+	right: 40%;
 }
 
 .facial-expressions img{
 	width: 60%;
-	margin-left: 100px;
+	/*margin-left: 100px;*/
+	position: relative;
+	transform: translate(18%, -378%);
 }
 
 //Media Query
@@ -108,5 +107,6 @@
 #character-relation img{
 	width: 50%;
 	margin: 0 auto;
+	padding: 10px;
 	text-align: center;
 }
