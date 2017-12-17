@@ -2,7 +2,11 @@
 body{
 	background-color: #0d0e10;
 	color: #ECCD8D;
-	background-image: url('../images/Pink-pixels-background.png');   
+	background-image: url('../images/Pink-pixels-background.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+	background-position: center;
 }
 
 #content{
