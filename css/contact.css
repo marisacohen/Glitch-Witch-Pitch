@@ -1,0 +1,44 @@
+.contact{
+	height:400px;
+}
+#marisa-cartoon {}
+
+#marisa-cartoon img{
+	width: 20%;
+	height: 20%;
+}
+
+#alexandra-cartoon{}
+
+#alexandra-cartoon img{
+	width: 20%;
+	height: 20%;
+}
+
+.bio{
+	width: 80%;
+	height: 30%;
+	margin: 0;
+	position: absolute;
+	left: 55%;
+	transform: translate(-40%, -70%);
+}
+
+#marisa-picture{}
+
+#marisa-picture img{
+	width: 20%;
+	height: 20%;
+	position: relative;
+	left: 80%;
+	transform: translateY(100%);
+}
+
+#alexandra-picture{}
+
+#alexandra-picture img{
+	width: 20%;
+	height: 20%:
+	position: relative;
+	transform: translateX(400%);
+}
