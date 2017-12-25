@@ -31,7 +31,7 @@
 
 
 /*Hover State*/
-/*@-webkit-keyframes hvr-pulse {
+@-webkit-keyframes hvr-pulse {
   25% {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
@@ -51,14 +51,14 @@
     transform: scale(0.9);
   }
 }
-.character-nav li a img{
+.tab-control{
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px transparent;
 }
-.character-nav li a img:hover{
+.tab-control:hover{
   -webkit-animation-name: hvr-pulse;
   animation-name: hvr-pulse;
   -webkit-animation-duration: 1s;
@@ -71,7 +71,8 @@
 /*Panels*/
 .tab-panel {
     display: none;
-    overflow: auto;	
+    overflow: auto;
+	
 }
 
 .tab-panel.active {
