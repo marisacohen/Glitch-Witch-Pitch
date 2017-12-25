@@ -31,42 +31,11 @@
 
 
 /*Hover State*/
-@-webkit-keyframes hvr-pulse {
-  25% {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-  }
-  75% {
-    -webkit-transform: scale(0.9);
-    transform: scale(0.9);
-  }
+.character-nav li.active, .character-nav li:hover {
+	background-color: #61468D;
 }
-@keyframes hvr-pulse {
-  25% {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-  }
-  75% {
-    -webkit-transform: scale(0.9);
-    transform: scale(0.9);
-  }
-}
-.tab-control{
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent;
-}
-.tab-control:hover{
-  -webkit-animation-name: hvr-pulse;
-  animation-name: hvr-pulse;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
+.character-nav li.active, .character-nav li:active {
+	background-color: #371E64;
 }
 /*Panels*/
 .tab-panel {
@@ -91,12 +60,12 @@
 	top: 40%;
 	left: 50%;
 	transform: translate(-40%, -50%);
-}
+}*
 
 .character-standing img{
 	width: 20%;
 	position: relative;
-	transform: translate(-200%, 15%);
+	right: 40%;
 }
 
 .facial-expressions img{
