@@ -15,8 +15,8 @@
 }
 
 .tabs a img{
-	width: 8%;
-	height: 8%;
+	width: 5%;
+	height: 5%;
 }
 
 .character-nav ul{
@@ -40,40 +40,38 @@
 /*Panels*/
 .tab-panel {
     display: none;
+    min-height: 100px;
     overflow: auto;
 }
 
 .tab-panel.active {
-	display: inline-block;
+	display: block;
 	background-color: #371E64;
-	width: 100%;
-	min-height: 100px;
 }
 
 .tab-panel p {
-	width: 80%;
-	/*margin: 20px;*/
+	width: 300px;
+	margin: 20px;
 	color: undefined;
 	position: relative;
-	bottom: 800px;
-	left: 250px;
+
+	left: 200px;
+}
+
+.character-standing{
+	float: left;
 }
 
 .character-standing img{
-	width: 20%;
-	position: relative;
-	left: -500px;
-	top: 0px;
+	width: 40%;
 }
-
 .facial-expressions{
-	position: relative;
-	bottom: 800px;
+	position: absolute;
+	left: 200px;
 }
 
 .facial-expressions img{
-	width: 60%;
-	margin-left: 100px;
+	clear: both;
 }
 
 //Media Query
