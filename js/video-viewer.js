@@ -21,7 +21,7 @@ function crossfade($img) {           // Function to fade between images
 
 }
 
-$(document).on('click', '.thumb', function(e){ // When a thumb is clicked on
+$(document).on('click', '.thumb', function(e){ // When a thumbnail is clicked on
   var $img,                               // Create local variable called $img
       src = this.href;                    // Store path to image
       request = src;                      // Store latest image request
@@ -29,7 +29,7 @@ $(document).on('click', '.thumb', function(e){ // When a thumb is clicked on
   e.preventDefault();                     // Stop default link behavior
   
   $thumbs.removeClass('active');          // Remove active from all thumbs
-  $(this).addClass('active');             // Add active to clicked thumb
+  $(this).addClass('active');             // Add active to clicked thumbnail
 
   if (cache.hasOwnProperty(src)) {        // If cache contains this image
     if (cache[src].isLoading === false) { // And if isLoading is false
