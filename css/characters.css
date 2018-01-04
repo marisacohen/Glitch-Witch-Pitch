@@ -45,8 +45,7 @@
 /*Panels*/
 .tab-panel {
     display: none;
-	width: 50%;
-	height: 50%;
+	height: 100%:
     overflow: auto;	
 }
 
