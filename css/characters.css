@@ -45,8 +45,9 @@
 /*Panels*/
 .tab-panel {
     display: none;
-	height: 100%:
+	height: 100%;
     overflow: auto;	
+	margin: 15px 0 0 0;
 }
 
 .tab-panel.active {
