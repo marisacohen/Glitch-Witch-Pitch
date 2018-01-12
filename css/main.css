@@ -15,7 +15,7 @@ body{
 }
 
 /*Navigation Positioning*/ 
-nav li .nav{
+nav li .nav-links{
     overflow: hidden;
     width: 100%;
     margin: 0px auto;

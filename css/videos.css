@@ -15,10 +15,9 @@
 
 /*Thumbnail*/
 
-#thumbnail{
+#thumbnails{
   margin: 20px;
   padding: 20px;
-  height: 60px;
   width: 70%;
 }
 
@@ -33,11 +32,16 @@ a.active img {
 /*Parts of Page*/
 #play-all{
 	width: 20%;
-    height: 20%;
-    margin-left: 80%;
+    text-align: center;
    
 }
 
 #play-all a img{
     width: 75%;
+}
+
+/*Columns*/
+
+.column {
+    float: left;
 }
