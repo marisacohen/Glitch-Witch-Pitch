@@ -29,18 +29,22 @@
 				<div class="videoGallery">
 				<div id="videoPlayer"></div>
                     
-				<div class="column" id="thumbnails"><a href="../images/TempArt/Glitchpromothumbnail.jpg" class="thumb active" title="Glitch Witch Promo"><img src="../images/TempArt/Glitchpromothumbnail.jpg" alt="Glitch Witch Promo"/></a></div>
+				<div class="column" id="thumbnails">
+                      <img class="thumb active" src="../images/TempArt/Glitchpromothumbnail.jpg" alt="Glitch Witch Promo" data-video-id="t4TIKAqjbB8" />
+                    </div>
 					
 					<div class="column" id="play-all">
                         <h2>Play All</h2>
-						<a href=""><img src="../images/TempArt/Glitchpromothumbnail.jpg" alt="Glitch Witch Promo"/></a>
+						<a href=""><img src="../images/TempArt/Glitchpromothumbnail.jpg" alt="Glitch Witch Promo" /></a>
 					</div>
             </div>
 			</div>
         </div>
 		<script src="../js/jquery-1.11.0.min.js"></script>
-		<script src="../js/video-viewer.js"></script>
+        <script src="https://www.youtube.com/iframe_api"></script>
+        <script src="../js/youtube-api-customization.js"></script>
     </body>
 </html>
 
 <!--Optional: refresh page to play video at top-->
+<!--Can do this by making videoplayer div fixed and let users scroll down the page while exploring the other thumbnails.-->
