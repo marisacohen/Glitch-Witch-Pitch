@@ -7,6 +7,30 @@
   overflow: hidden;
 }
 
+@media (min-width:360px){
+    #videoPlayer{
+        margin-left: 11%;
+        width: 80%;
+        height: 60%;
+    }
+}
+
+@media (min-width:375px){
+    #videoPlayer{
+        margin-left: 10%;
+        width: 80%;
+        height: 60%;
+    }
+}
+
+/*@media (min-width:768px){
+    #videoPlayer{
+        width: 90%;
+        height: 90%;
+        
+    }
+}*/
+
 #videoPlayer img{
   position: absolute;
   max-width: 100%;
