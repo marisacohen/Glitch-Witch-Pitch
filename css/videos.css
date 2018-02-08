@@ -7,15 +7,7 @@
   overflow: hidden;
 }
 
-@media (min-width:360px){
-    #videoPlayer{
-        margin-left: 11%;
-        width: 80%;
-        height: 60%;
-    }
-}
-
-@media (min-width:375px){
+@media (max-width:375px){
     #videoPlayer{
         margin-left: 10%;
         width: 80%;
