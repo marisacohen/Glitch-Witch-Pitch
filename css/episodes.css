@@ -14,7 +14,6 @@ License: http://creativecommons.org/licenses/by-sa/3.0/ (Attribution Share Alike
 
 body{
 	margin: 0;
-	min-width: 980px;
 	padding: 0;
 }
 
@@ -126,11 +125,26 @@ h2 {
         padding: 0;
 }
 
+#fourth{
+        background: url("../images/episodes_page/creative-1.jpg") 50% 0 no-repeat fixed;
+		background-size: cover;
+        color: black;
+        height: 650px;
+        padding: 100px 0 0 0;   
+        width: 100%;
+        overflow: hidden;
+        padding: 0;
+}
+
 #fifth{
-        background: #ccc;
-        height: 400px;
-        margin: 0 auto;
-        padding: 40px 0 0 0;
+         background: url("../images/episodes_page/creative-1.jpg") 50% 0 no-repeat fixed;
+		background-size: cover;
+        color: black;
+        height: 650px;
+        padding: 100px 0 0 0;   
+        width: 100%;
+        overflow: hidden;
+        padding: 0;
 }
 
 .story{

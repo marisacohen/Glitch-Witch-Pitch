@@ -1,0 +1,25 @@
+#banner-parallax{
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+#banner-parallax img{
+	height: 20%;
+	width: 100%;
+}
+
+#description{
+	width: 80%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+#bex-eyes-follow{
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+#bex-eyes-follow img{
+	width: 50%;
+}
