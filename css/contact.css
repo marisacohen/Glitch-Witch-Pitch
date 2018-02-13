@@ -1,0 +1,69 @@
+.marisa-description{
+	width: 100%;
+    height: 40%;
+}
+
+.marisa-description img{
+	width: 15%;
+	height: 15%;
+}
+
+.marisa-social-media{
+	width: 100%;
+	float: right;
+}
+
+.marisa-social-media img{
+	width: 15%;
+	height: 15%;
+	float: right;
+}
+
+.marisa-social-media a img{
+	width: 2.5%;
+	height: 2.5%;
+    margin: .5%;
+	margin-top: 12%;
+}
+
+.marisa-description p{
+	width: 80%;
+	height: 30%;
+	margin: 0;
+	float: right;
+
+}
+.alexandra-description{
+	width: 100%;
+}
+
+.alexandra-description img{
+	width: 15%;
+	height: 15%;
+}
+
+.alexandra-social-media{
+	width: 100%;
+	float: right;
+}
+
+.alexandra-social-media img{
+	width: 15%;
+	height: 15%;
+	float: right;
+}
+
+.alexandra-social-media a img{
+	width: 2.5%;
+	height: 2.5%;
+    margin: .5%;
+	margin-top: 12%;
+}
+
+.alexandra-description p{
+	width: 80%;
+	height: 30%;
+	margin: 0;
+	float: right;
+
+}

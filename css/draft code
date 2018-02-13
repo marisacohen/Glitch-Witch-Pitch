@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel=icon type="image/gif" href="../images/icons/GlitchWitchIcon.png" />
+        <title>Glitch Witch</title>
+        <link rel="stylesheet" type="text/css" href="../css/main.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="../css/contact.css" />
+    </head>
+    <body>
+            <header>
+				<div id="logo"><img src="../images/home_page/Glitch-Witch-Logo-Standing-Bex.png"/></div>
+                <nav>
+					<ul>
+                    	<li><a href="../index.html"><img src="../images/navigation_buttons/navbarHome.png" alt="Homepage"/></a></li>
+                    	<li><a href="the-story.html"><img src="../images/navigation_buttons/navbarTheStory.png" alt="The Story"/></a></li>
+                    	<li><a href="characters.html"><img src="../images/navigation_buttons/navbarCharacters.png"alt="Characters"/></a></li>
+						<li><a href="episodes.html"><img src="../images/navigation_buttons/navbarEpisodes.png" alt="Episodes"/></a></li>
+                    	<li><a href="storyboards.html"><img src="../images/navigation_buttons/navbarStoryboards.png" alt="Storyboards"/></a></li>
+                    	<li><a href="videos.html"><img src="../images/navigation_buttons/navbarVideos.png" alt="Videos"/></a></li>
+                    	<li><a href="games.html"><img src="../images/navigation_buttons/navbarGames.png" alt="Games" /></a></li>
+                    	<li><a href="contact.html"><img src="../images/navigation_buttons/navbarCreatorContact.png" alt="Contact" /></a></li>
+                    </ul>
+                </nav>
+                <h1>Creator/Contact</h1>
+            </header>
+            <div id="content">
+				<div class="marisa-description">
+				<img src="../images/TempArt/SelfPortraitCartoon.jpg"/>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a</p></div>
+				<div class="marisa-social-media"><img src="../images/TempArt/selfpic3.JPG"/></div>
+				<div class="alexandra-description">
+				<img src="../images/TempArt/cartoonizedSandraGlitchWitchStylecrop.jpg"/>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a</p></div>
+				<div class="alexandra-social-media"><img src="../images/TempArt/Sandrapiccrop.JPG"/></div>
+			</div>
+    </body>
+</html>
+
+
+
+
+/*#content{
+ margin: 0 auto;
+	text-align: center;
+}*/
+.marisa-description{
+	width: 100%;
+}
+
+.marisa-description img{
+	width: 18%;
+	height: 18%;
+}
+
+.marisa-social-media{
+	width: 100%;
+}
+
+.marisa-social-media img{
+	width: 15%;
+	height: 15%;
+	/*clear: both;*/
+	float: right;
+}
+
+.marisa-description p{
+	width: 80%;
+	height: 30%;
+	margin: 0;
+	float: right;
+
+}
+.alexandra-description{
+	width: 100%;
+}
+
+.alexandra-description img{
+	width: 18%;
+	height: 18%;
+}
+
+.alexandra-social-media{
+	width: 100%;
+}
+
+.alexandra-social-media img{
+	width: 15%;
+	height: 15%;
+	clear: both;
+	float: right;
+}
+
+.alexandra-description p{
+	width: 80%;
+	height: 30%;
+	margin: 0;
+	float: right;
+
+}

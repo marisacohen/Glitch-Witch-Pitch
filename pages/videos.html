@@ -4,6 +4,7 @@
         <link rel=icon type="image/gif" href="../images/icons/GlitchWitchIcon.png" />
         <title>Glitch Witch</title>
         <link rel="stylesheet" type="text/css" href="../css/main.css" />
+		<link rel="stylesheet" type="text/css" href="../css/videos.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </head>
     <body>
@@ -11,20 +12,39 @@
             <header>
                  <nav>
 					<ul>
-                    	<li><a href="../index.html"><img src="../images/navigation_buttons/navbarHome.png" alt="Homepage"/></a></li>
-                    	<li><a href="the-story.html"><img src="../images/navigation_buttons/navbarTheStory.png" alt="The Story"/></a></li>
-                    	<li><a href="/characters.html"><img src="../images/navigation_buttons/navbarCharacters.png"alt="Characters"/></a></li>
-						<li><a href="episodes.html"><img src="../images/navigation_buttons/navbarEpisodes.png" alt="Episodes"/></a></li>
-                    	<li><a href="storyboards.html"><img src="../images/navigation_buttons/navbarStoryboards.png" alt="Storyboards"/></a></li>
-                    	<li><a href="videos.html"><img src="../images/navigation_buttons/navbarVideos.png" alt="Videos"/></a></li>
-                    	<li><a href="games.html"><img src="../images/navigation_buttons/navbarGames.png" alt="Games" /></a></li>
-                    	<li><a href="contact.html"><img src="../images/navigation_buttons/navbarCreatorContact.png" alt="Contact" /></a></li>
+                        <li id="logo"><a href="../index.html"><img src="../images/home_page/Glitch-Witch-Logo-Standing-Bex.png" alt="Glitch Witch Logo"/></a></li>
+                    	<li class="nav-links"><a href="../index.html"><img src="../images/navigation_buttons/navbarHome.png" alt="Homepage"/></a></li>
+                    	<li class="nav-links"><a href="the-story.html"><img src="../images/navigation_buttons/navbarTheStory.png" alt="The Story"/></a></li>
+                    	<li class="nav-links"><a href="characters.html"><img src="../images/navigation_buttons/navbarCharacters.png"alt="Characters"/></a></li>
+						<li class="nav-links"><a href="episodes.html"><img src="../images/navigation_buttons/navbarEpisodes.png" alt="Episodes"/></a></li>
+                    	<li class="nav-links"><a href="storyboards.html"><img src="../images/navigation_buttons/navbarStoryboards.png" alt="Storyboards"/></a></li>
+                    	<li class="nav-links"><a href="videos.html"><img src="../images/navigation_buttons/navbarVideos.png" alt="Videos"/></a></li>
+                    	<li class="nav-links"><a href="games.html"><img src="../images/navigation_buttons/navbarGames.png" alt="Games" /></a></li>
+                    	<li class="nav-links"><a href="contact.html"><img src="../images/navigation_buttons/navbarCreatorContact.png" alt="Contact" /></a></li>
                     </ul>
                 </nav>
                 <h1>Videos</h1>
             </header>
             <div id="content">
+				<div class="videoGallery">
+				<div id="videoPlayer"></div>
+                    
+				<div class="column" id="thumbnails">
+                      <img class="thumb active" src="../images/TempArt/Glitchpromothumbnail.jpg" alt="Glitch Witch Promo" data-video-id="t4TIKAqjbB8" />
+                    </div>
+					
+					<div class="column" id="play-all">
+                        <h2>Play All</h2>
+						<a href=""><img src="../images/TempArt/Glitchpromothumbnail.jpg" alt="Glitch Witch Promo" /></a>
+					</div>
             </div>
+			</div>
         </div>
+		<script src="../js/jquery-1.11.0.min.js"></script>
+        <script src="https://www.youtube.com/iframe_api"></script>
+        <script src="../js/youtube-api-customization.js"></script>
     </body>
 </html>
+
+<!--Optional: refresh page to play video at top-->
+<!--Can do this by making videoplayer div fixed and let users scroll down the page while exploring the other thumbnails.-->
