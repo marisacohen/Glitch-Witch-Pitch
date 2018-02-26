@@ -9,6 +9,7 @@ body{
     overflow: hidden;
 }
 
+/*Centers the content vertically*/
 #content{
         Position: absolute;
         top: 50%;
