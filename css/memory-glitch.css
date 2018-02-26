@@ -1,3 +1,4 @@
+/*Please see this tutorial by Matt Walker for how this game is made: http://www.my-html-codes.com/game-using-css3-animation*/
 *{
     padding: 0;
     margin: 0;
@@ -8,7 +9,6 @@ body{
     background: url(../images/web-games/memory-glitch/GW_hat_back.jpg);
     color: #fff;
     font-family: myriad pro;
-    overflow: hidden;
 }
 
 #gameStats{
