@@ -9,6 +9,7 @@ body{
     background: url(../images/web-games/memory-glitch/GW_hat_back.jpg);
     color: #fff;
     font-family: myriad pro;
+    overflow: hidden;
 }
 
 #gameStats{
@@ -31,6 +32,23 @@ body{
     float: right;
     text-align: right;
     padding: 0 10px 0 0;
+}
+
+#gameStats p#backToGames{
+    width: 200px;
+    float: left;
+    text-align: left;
+    padding: 0 10px 0 0;
+}
+
+#gameStats .backToGames{
+    width: 100px;
+    float:left;
+    text-align: left;
+    padding: 0 6px 0 0;
+    color: #fff;
+    text-decoration: none;
+    display: block;
 }
 
 #gameStats .gameReset{
