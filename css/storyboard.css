@@ -2,3 +2,7 @@
 	width: 15%;
     cursor: pointer;
 }
+
+.thumb:hover{
+    border: 4px solid #7BCBA4;
+}
