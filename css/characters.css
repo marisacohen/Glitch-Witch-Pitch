@@ -91,18 +91,6 @@
 }
 }
 
-/*Game Button Link*/
-#characterGameBtn{
-	text-align: center;
-	margin: 0 auto;
-}
-
-#characterGameBtn img{
-	text-align: center;
-	margin: 0 auto;
-	width: 15%;
-}
-
 /*relationship image*/
 #character-relation{
 	margin: 0 auto;
