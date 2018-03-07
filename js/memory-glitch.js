@@ -1,3 +1,5 @@
+//Please see this tutorial by Matt Walker for how this game is made: http://www.my-html-codes.com/game-using-css3-animation
+
 //create all the variables
 var score;
 var cardsmatched;
