@@ -10,6 +10,11 @@ h1{
 
 a{
     text-decoration: none;
+    color: #7BCBA4;
+}
+
+a:active{
+    color: #4B0082; 
 }
 
 /* Slideshow Container*/

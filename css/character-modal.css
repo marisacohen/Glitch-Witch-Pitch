@@ -2,7 +2,7 @@
   position: absolute;
   z-index: 1000;
   padding: 25px;
-  background-color: #555;
+  background-color: #f6fddb;
   max-width: 100%;
   max-height: 100%;
 }
@@ -15,22 +15,22 @@
   text-align: center;}
 
 #character-relation-closeup {
-  background-color: #fff;
+  background-color: #7bcba4;
   text-align: center;
   clear: both;
   padding: 15px;
-  border: 10px solid #e2e2e2;}
+  border: 10px solid #7bcba4;}
 
 #character-relation-closeup img{
-    width: 525px;
-    height: 600px;
+    width: 480px;
+    /*height: 615px;*/
 }
 
 #window a {
   margin: 3px;}
 
 button.modal-close {
-  background-color: #ed8e6c;
+  background-color: #311b5c;
   color: #ffffff;
   border: none;
   border-radius: 4px;
