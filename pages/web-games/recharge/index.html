@@ -2,8 +2,8 @@
 <html lang="en"> 
 <head> 
 	<meta charset="UTF-8" />
-	<title>Recharge</title>
-    <script src="../../js/recharge/phaser-version/phaser.min.js"></script>
+	<title>Phaser - Making your first game</title>
+    <script src="phaser-version/phaser.min.js"></script>
     <style type="text/css">
         body {
             margin: 0;
@@ -11,17 +11,20 @@
     </style>
 </head>
 <body>
+        <br/>
+     <div class="back-to-games"><a href="../../games.html">Back To Games</a></div>
+        <br/>
 
 <script type="text/javascript">
 
 var game = new Phaser.Game(800, 600, Phaser.AUTO, '', { preload: preload, create: create, update: update });
 
 function preload() {
-    game.load.image('background', 'images/web-games/recharge/tinybackground.png');
-    game.load.image('ground', 'images/web-games/recharge/platform.png');
-    game.load.image('sidewalk', 'images/web-games/recharge/BottomPlatform.png');
-    game.load.image('coffee', 'images/web-games/recharge/coffee.png');
-    game.load.spritesheet('dude', 'images/web-games/recharge/TinyBexSprite.png', 35, 48);
+    game.load.image('background', 'assets/tinybackground.png');
+    game.load.image('ground', 'assets/platform.png');
+    game.load.image('sidewalk', 'assets/BottomPlatform.png');
+    game.load.image('coffee', 'assets/coffee.png');
+    game.load.spritesheet('dude', 'assets/TinyBexSprite.png', 35, 48);
     
 }
 

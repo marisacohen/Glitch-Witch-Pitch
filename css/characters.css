@@ -1,5 +1,5 @@
 /*Tabs Design*/
-.tabs {
+.character-panels {
     overflow: hidden;
     width: 100%;
     margin: 0px auto;
@@ -8,14 +8,14 @@
 	display: inline-block;
 }
 
-.tabs a{
+.character-panels a{
     text-align: center;
     text-decoration: none;
     padding: 6px;
     /*margin: 0px auto;*/
 }
 
-.tabs a img{
+.character-panels a img{
 	width: 8%;
 	height: 8%;
 }
@@ -43,49 +43,34 @@
         transform: scale(1.3);
 }
 /*Panels*/
-.tab-panel {
+.character {
     display: none;
 	height: 100%;
-    overflow: auto;	
+    overflow: hidden;	
 	margin: 15px 0 0 0;
 }
 
-.tab-panel.active {
+.character.active {
 	display: inline-block;
 	background-color: #371E64;
 	width: 100%;
-	position: relative;
+	
 }
-.tab-panel h3{
-    position: relative;
-    width: 30%;
-    height: 10%;
+.character h3{
+   
     text-align: center;
-    margin: 0 auto;
-    top: 200%;
-    transform: translate(0%, -2000%);*/
+    margin: 20 auto;
+    
 }
-.tab-panel p {
+.character p {
 	width: 80%;
-	height: 30%;
-	margin: 0;
-	position: absolute;
-	top: 40%;
-	left: 50%;
-	transform: translate(-40%, -50%);
+    float: left;
 }
 
-.character-standing img{
+.main-image img{
 	width: 20%;
-	position: relative;
-	transform: translate(-200%, 15%);
-}
-
-.facial-expressions img{
-	width: 60%;
-	/*margin-left: 100px;*/
-	position: relative;
-	transform: translate(18%, 378%);
+    float: left;
+	
 }
 
 /*Media Query*/
