@@ -80,11 +80,11 @@ img{
         margin: 0 0 15px 0;     
 }
 
-#header, #intro, #second{
+#header, #first, #second{
         width: 100%;
 }
 
-#intro{
+#first{
         /*background:url("../images/episodes_page/work-1.jpg") 50% 0 no-repeat fixed;*/
         background-color: #845aa2;
 		background-size: cover;
@@ -93,6 +93,18 @@ img{
         margin: 0 auto;
         padding: 0;
         width: 100%;
+}
+
+#first .storytime-bear{
+    background: url(../images/episodes_page/storytime-Bear_00000.gif) 85% 0 no-repeat fixed;
+    height: 900px;
+    margin: 0 auto;
+    padding: 0;
+    position: absolute;
+    z-index: 200;
+    max-width: 1800px;
+    width: 85%;
+    overflow: hidden;
 }
 
 #second{
@@ -136,11 +148,23 @@ img{
         background-color: #e6bd6e;
 		background-size: cover;
         color: black;
-        height: 650px;
+        height: 750px;
         padding: 100px 0 0 0;   
         width: 100%;
         overflow: hidden;
         padding: 0;
+}
+
+#fourth .retro-toy{
+    background: url(../images/episodes_page/Bex-90s-toy-design-gifforweb.gif) 85% 0 no-repeat fixed;
+    height: 750px;
+    margin: 0 auto;
+    padding: 0;
+    position: absolute;
+    z-index: 200;
+    max-width: 1800px;
+    width: 85%;
+    overflow: hidden;
 }
 
 #fifth{
@@ -148,7 +172,7 @@ img{
     background-color: #2d46a2;
 		background-size: cover;
         color: black;
-        height: 650px;
+        height: 750px;
         padding: 100px 0 0 0;   
         width: 100%;
         overflow: hidden;
