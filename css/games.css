@@ -1,4 +1,30 @@
-.thumb{
+.thumbnails{
+    position: relative;
 	width: 15%;
+    float: left;
+    margin: .25% ;
     cursor: pointer;
+}
+
+.thumb {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #7BCBA4;
+}
+
+.thumbnails:hover .overlay {
+  opacity: .5;
 }

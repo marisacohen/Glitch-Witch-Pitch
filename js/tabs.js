@@ -4,7 +4,7 @@ $('.character-nav').each(function(){               // Find lists of tabs
   var $link = $tab.find('a');                   // Get link from active tab
   var $panel = $($link.attr('href'));             // Get active panel
 
-  $this.on('click','.tab-control', function(e) { // When click on a tab
+  $this.on('click','.character-btn', function(e) { // When click on a tab
     e.preventDefault();                           // Prevent link behavior
     var $link = $(this),                          // Store the current link
         id = this.hash;                          // Get href of clicked tab 
