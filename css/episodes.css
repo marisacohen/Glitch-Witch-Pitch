@@ -30,35 +30,29 @@ p{
 	margin: 0 0 20px 0;
 }
 
-p, ul{
-	font-family: sans-serif;
+/*p, ul{
 	font-size-adjust: 0.488;
 	font-weight: 200;
 	font-style: normal;
-}
+}*/
 
 img{
 	border: 0;
 	width:100%;
 }
 
-h1, #pixels{
-	font-family: sans-serif;
+/*h1, #pixels{
 	font-size-adjust: 0.4;
 	font-weight: 700;
 	font-size: normal;
-}
+}*/
 
-h2 {
-	font-family: sans-serif;
+/*h2 {
     font-size-adjust:0.531;
     font-weight:500;
     font-style:normal;
-}
+}*/
 
-#header h1, #pixels {
-	color: #48941A;
-}
 
 .float-left{
 	float:left;
