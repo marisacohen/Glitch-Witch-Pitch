@@ -12,6 +12,15 @@ License: http://creativecommons.org/licenses/by-sa/3.0/ (Attribution Share Alike
 @charset "utf-8";
 /*CSS Document*/
 
+/*Color Pattern for Episode Divs*/
+/*purple: #845aa2
+pink: #ec5288
+green: #7bcba4
+yellow: #e6bd6e
+blue: #2d46a2
+grey: #354656
+red: #e75a49*/
+
 body{
 	margin: 0;
 	padding: 0;
@@ -82,9 +91,10 @@ h2 {
 }
 
 #intro{
-        background:url("../images/episodes_page/work-1.jpg") 50% 0 no-repeat fixed;
+        /*background:url("../images/episodes_page/work-1.jpg") 50% 0 no-repeat fixed;*/
+        background-color: #845aa2;
 		background-size: cover;
-        color: white;
+        color: black;
         height: 900px;
         margin: 0 auto;
         padding: 0;
@@ -92,9 +102,10 @@ h2 {
 }
 
 #second{
-        background: url("../images/episodes_page/secondBG-1.jpg") 50% 0 no-repeat fixed;
+        /*background: url("../images/episodes_page/secondBG-1.jpg") 50% 0 no-repeat fixed;*/
+        background-color: #ec5288;
 		background-size: cover;
-        color: white;
+        color: black;
         height: 1300px;
         margin: 0 auto;
         overflow: hidden;
@@ -115,7 +126,8 @@ h2 {
 }
 
 #third{
-        background: url("../images/episodes_page/creative-1.jpg") 50% 0 no-repeat fixed;
+        /*background: url("../images/episodes_page/creative-1.jpg") 50% 0 no-repeat fixed;*/
+        background-color: #7bcba4;
 		background-size: cover;
         color: black;
         height: 650px;
@@ -126,7 +138,8 @@ h2 {
 }
 
 #fourth{
-        background: url("../images/episodes_page/creative-1.jpg") 50% 0 no-repeat fixed;
+        /*background: url("../images/episodes_page/creative-1.jpg") 50% 0 no-repeat fixed;*/
+        background-color: #e6bd6e;
 		background-size: cover;
         color: black;
         height: 650px;
@@ -137,7 +150,8 @@ h2 {
 }
 
 #fifth{
-         background: url("../images/episodes_page/creative-1.jpg") 50% 0 no-repeat fixed;
+        /* background: url("../images/episodes_page/creative-1.jpg") 50% 0 no-repeat fixed;*/
+    background-color: #2d46a2;
 		background-size: cover;
         color: black;
         height: 650px;
