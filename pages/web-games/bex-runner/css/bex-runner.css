@@ -26,6 +26,12 @@ body{
     text-decoration: none;
     color: white;
 }
+
+.back-to-games a:hover{
+    text-decoration: none;
+    color: #7BCBA4;
+}
+
 #ph_game{ 
     padding-top: 35px;
 }
