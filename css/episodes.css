@@ -12,6 +12,15 @@ License: http://creativecommons.org/licenses/by-sa/3.0/ (Attribution Share Alike
 @charset "utf-8";
 /*CSS Document*/
 
+/*Color Pattern for Episode Divs*/
+/*purple: #845aa2
+pink: #ec5288
+green: #7bcba4
+yellow: #e6bd6e
+blue: #2d46a2
+grey: #354656
+red: #e75a49*/
+
 body{
 	margin: 0;
 	padding: 0;
@@ -21,35 +30,29 @@ p{
 	margin: 0 0 20px 0;
 }
 
-p, ul{
-	font-family: sans-serif;
+/*p, ul{
 	font-size-adjust: 0.488;
 	font-weight: 200;
 	font-style: normal;
-}
+}*/
 
 img{
 	border: 0;
 	width:100%;
 }
 
-h1, #pixels{
-	font-family: sans-serif;
+/*h1, #pixels{
 	font-size-adjust: 0.4;
 	font-weight: 700;
 	font-size: normal;
-}
+}*/
 
-h2 {
-	font-family: sans-serif;
+/*h2 {
     font-size-adjust:0.531;
     font-weight:500;
     font-style:normal;
-}
+}*/
 
-#header h1, #pixels {
-	color: #48941A;
-}
 
 .float-left{
 	float:left;
@@ -77,24 +80,38 @@ h2 {
         margin: 0 0 15px 0;     
 }
 
-#header, #intro, #second{
+#header, #first, #second{
         width: 100%;
 }
 
-#intro{
-        background:url("../images/episodes_page/work-1.jpg") 50% 0 no-repeat fixed;
+#first{
+        /*background:url("../images/episodes_page/work-1.jpg") 50% 0 no-repeat fixed;*/
+        background-color: #845aa2;
 		background-size: cover;
-        color: white;
+        color: black;
         height: 900px;
         margin: 0 auto;
         padding: 0;
         width: 100%;
 }
 
+#first .storytime-bear{
+    background: url(../images/episodes_page/storytime-Bear_00000.gif) 85% 0 no-repeat fixed;
+    height: 900px;
+    margin: 0 auto;
+    padding: 0;
+    position: absolute;
+    z-index: 200;
+    max-width: 1800px;
+    width: 85%;
+    overflow: hidden;
+}
+
 #second{
-        background: url("../images/episodes_page/secondBG-1.jpg") 50% 0 no-repeat fixed;
+        /*background: url("../images/episodes_page/secondBG-1.jpg") 50% 0 no-repeat fixed;*/
+        background-color: #ec5288;
 		background-size: cover;
-        color: white;
+        color: black;
         height: 1300px;
         margin: 0 auto;
         overflow: hidden;
@@ -115,7 +132,8 @@ h2 {
 }
 
 #third{
-        background: url("../images/episodes_page/creative-1.jpg") 50% 0 no-repeat fixed;
+        /*background: url("../images/episodes_page/creative-1.jpg") 50% 0 no-repeat fixed;*/
+        background-color: #7bcba4;
 		background-size: cover;
         color: black;
         height: 650px;
@@ -126,21 +144,35 @@ h2 {
 }
 
 #fourth{
-        background: url("../images/episodes_page/creative-1.jpg") 50% 0 no-repeat fixed;
+        /*background: url("../images/episodes_page/creative-1.jpg") 50% 0 no-repeat fixed;*/
+        background-color: #e6bd6e;
 		background-size: cover;
         color: black;
-        height: 650px;
+        height: 750px;
         padding: 100px 0 0 0;   
         width: 100%;
         overflow: hidden;
         padding: 0;
 }
 
+#fourth .retro-toy{
+    background: url(../images/episodes_page/Bex-90s-toy-design-gifforweb.gif) 85% 0 no-repeat fixed;
+    height: 750px;
+    margin: 0 auto;
+    padding: 0;
+    position: absolute;
+    z-index: 200;
+    max-width: 1800px;
+    width: 85%;
+    overflow: hidden;
+}
+
 #fifth{
-         background: url("../images/episodes_page/creative-1.jpg") 50% 0 no-repeat fixed;
+        /* background: url("../images/episodes_page/creative-1.jpg") 50% 0 no-repeat fixed;*/
+    background-color: #2d46a2;
 		background-size: cover;
         color: black;
-        height: 650px;
+        height: 750px;
         padding: 100px 0 0 0;   
         width: 100%;
         overflow: hidden;
