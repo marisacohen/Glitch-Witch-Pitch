@@ -24,8 +24,13 @@ red: #e75a49*/
 body{
 	margin: 0;
 	padding: 0;
+    overflow-x: hidden;
 }
 
+/*#content{
+    width: 80%;
+    margin: 0 auto;
+}*/
 p{
 	margin: 0 0 20px 0;
 }
@@ -92,18 +97,18 @@ img{
         height: 900px;
         margin: 0 auto;
         padding: 0;
-        width: 100%;
+        width: 80%;
 }
 
 #first .storytime-bear{
-    background: url(../images/episodes_page/storytime-Bear_00000.gif) 85% 0 no-repeat fixed;
+    background: url(../images/episodes_page/storytime-Bear.gif) 100% 0 no-repeat fixed;
     height: 900px;
     margin: 0 auto;
     padding: 0;
     position: absolute;
     z-index: 200;
     max-width: 1800px;
-    width: 85%;
+    width: 100%;
     overflow: hidden;
 }
 
@@ -116,7 +121,7 @@ img{
         margin: 0 auto;
         overflow: hidden;
         padding: 0;
-        width: 100%;
+        width: 80%;
 }
 
 #second .bg{
@@ -127,7 +132,7 @@ img{
         position: absolute;
         z-index: 200;
         max-width: 1900px;
-		width: 100%;
+		width: 80%;
         overflow: hidden;
 }
 
@@ -137,10 +142,10 @@ img{
 		background-size: cover;
         color: black;
         height: 650px;
-        padding: 100px 0 0 0;   
-        width: 100%;
+        padding: 100px 0 0 0;
+        margin: 0 auto;
+        width: 80%;
         overflow: hidden;
-        padding: 0;
 }
 
 #fourth{
@@ -149,14 +154,15 @@ img{
 		background-size: cover;
         color: black;
         height: 750px;
-        padding: 100px 0 0 0;   
-        width: 100%;
+        padding: 100px 0 0 0;
+        margin: 0 auto;
+        width: 80%;
         overflow: hidden;
         padding: 0;
 }
 
 #fourth .retro-toy{
-    background: url(../images/episodes_page/Bex-90s-toy-design-gifforweb.gif) 85% 0 no-repeat fixed;
+    background: url(../images/episodes_page/Bex-90s-toy-Episode.gif) 85% 0 no-repeat fixed;
     height: 750px;
     margin: 0 auto;
     padding: 0;
@@ -173,8 +179,9 @@ img{
 		background-size: cover;
         color: black;
         height: 750px;
-        padding: 100px 0 0 0;   
-        width: 100%;
+        padding: 100px 0 0 0;
+        margin: 0 auto;
+        width: 80%;
         overflow: hidden;
         padding: 0;
 }
