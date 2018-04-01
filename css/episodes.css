@@ -59,19 +59,19 @@ img{
 }*/
 
 
-.float-left{
+.story .float-left{
 	float:left;
 	margin: 0 0 0 20px;
 }
 
-.float-right{
-	float: right;
-	margin: 0 20px 0 0;
+.story .float-left p, .story .float-left h3{
+	width: 35%;
+	margin: 0 0 0 20px;
 }
 
-#isaacMagician{
-    width: 40%;
-    float: right; 
+.story .float-right{
+	float: right;
+	margin: 0 20px 0 0;
 }
 
 .center{
@@ -151,6 +151,20 @@ img{
         margin: 0 auto;
         width: 80%;
         overflow: hidden;
+        
+}
+
+#third #isaacMagician{
+    background: url(../images/episodes_page/IsaacMagiciansketch.jpg) no-repeat fixed;
+        height: 50%;
+        margin: 0 auto;
+        padding: 0;
+        position: absolute;
+        z-index: 200;
+        /*max-width: 1900px;*/
+		width: 45%;
+        overflow: hidden;
+    /*width: 65%;*/
 }
 
 #fourth{
@@ -198,8 +212,7 @@ img{
         width: 980px;
 }
 
-.story .float-left, .story .float-right{
+/*.story .float-left, .story .float-right{
         padding: 100px 0 0 0;
-        position: relative;
-        width: 350px;   
-}
+        width: 35%;   
+}*/
