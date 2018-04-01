@@ -155,16 +155,14 @@ img{
 }
 
 #third #isaacMagician{
-    background: url(../images/episodes_page/IsaacMagiciansketch.jpg) no-repeat fixed;
-        height: 50%;
         margin: 0 auto;
         padding: 0;
-        position: absolute;
+        position:relative;
+        float: right;
         z-index: 200;
         /*max-width: 1900px;*/
-		width: 45%;
+		width: 30%;
         overflow: hidden;
-    /*width: 65%;*/
 }
 
 #fourth{
