@@ -35,42 +35,14 @@ p{
 	margin: 0 0 20px 0;
 }
 
-/*p, ul{
-	font-size-adjust: 0.488;
-	font-weight: 200;
-	font-style: normal;
-}*/
 
 img{
 	border: 0;
 	width:100%;
 }
 
-/*h1, #pixels{
-	font-size-adjust: 0.4;
-	font-weight: 700;
-	font-size: normal;
-}*/
 
-/*h2 {
-    font-size-adjust:0.531;
-    font-weight:500;
-    font-style:normal;
-}*/
-
-
-.story .float-left{
-	float:left;
-	margin: 0 0 0 20px;
-    display: inline-block;
-}
-
-.story .float-left p, .story .float-left h3{
-	width: 35%;
-	margin: 0 0 0 20px;
-}
-
-.story .float-right{
+/*.story .float-right{
 	float: right;
 	margin: 0 20px 0 0;
     display: inline-block;
@@ -79,7 +51,7 @@ img{
 .story .float-right p, .story .float-right h3{
 	width: 35%;
 	margin: 0 20px 0 0;
-}
+}*/
 
 #nav{
         list-style: none;
@@ -91,8 +63,15 @@ img{
         margin: 0 0 15px 0;     
 }
 
-#header, #first, #second{
-        width: 100%;
+.story .float-left{
+	float:left;
+	margin: 0 0 0 20px;
+    display: inline-block;
+}
+
+.story .float-left p, .story .float-left h3{
+	width: 35%;
+	margin: 0 0 0 20px;
 }
 
 #first{
@@ -158,12 +137,11 @@ img{
 #third #isaacMagician{
         margin: 0 auto;
         padding: 0;
-        float: right;
         z-index: 200;
-        /*max-width: 1900px;*/
 		width: 30%;
         overflow: hidden;
-        vertical-align: middle;
+        position: absolute;
+        right: 15%;
 }
 
 #fourth{
@@ -209,4 +187,16 @@ img{
         min-width: 980px;
         overflow: auto;
         width: 980px;
+}
+
+@media (max-width:900px){
+    #third #isaacMagician{
+        margin: 0 auto;
+        padding: 0;
+        z-index: 200;
+		width: 30%;
+        overflow: hidden;
+        position: absolute;
+        bottom: %;
+}
 }
