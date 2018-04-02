@@ -64,7 +64,6 @@ img{
 }
 
 .story .float-left{
-	float:left;
 	margin: 0 0 0 20px;
     display: inline-block;
 }
@@ -136,12 +135,14 @@ img{
 
 #third #isaacMagician{
         margin: 0 auto;
-        padding: 0;
-        z-index: 200;
-		width: 30%;
+        padding: 0px;
+        float: right;
+		width: 50%;
         overflow: hidden;
-        position: absolute;
-        right: 15%;
+}
+
+#third .story .float-left{
+    width: 80%;
 }
 
 #fourth{
