@@ -51,6 +51,16 @@ body{
     display: block;
 }
 
+#gameStats .backToGames:hover{
+    width: 100px;
+    float:left;
+    text-align: left;
+    padding: 0 6px 0 0;
+    color: #7BCBA4;
+    text-decoration: none;
+    display: block;
+}
+
 #gameStats .gameReset{
     width: 200px;
     float: right;

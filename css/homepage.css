@@ -90,3 +90,10 @@ li{
 	/*margin-top: 1%;
 	margin-left: 2%;*/
 }
+
+#social-media a img:hover{
+    -webkit-transform: scale(1.4);
+        -ms-transform: scale(1.4);
+        transform: scale(1.4);
+        transform: scale(1.4);
+}

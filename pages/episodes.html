@@ -2,6 +2,7 @@
 <html>
     <head>
         <link rel=icon type="image/gif" href="../images/icons/GlitchWitchIcon.png" />
+        <meta charset="UTF-8"/>
         <title>Glitch Witch</title>
         <link href="https://fonts.googleapis.com/css?family=Mina" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="../css/main.css" />
@@ -9,7 +10,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </head>
     <body>
-        <div id="page">
             <header>
                 <nav>
 					<ul>
@@ -26,74 +26,42 @@
                 </nav>
                 <h1>Episodes</h1>
             </header>
-            <div id="content">
                 <div id="first">
-					<div class="story">
-                        <div class="storytime-bear"></div>
-						<div class="float-left">
+						<div class="story float-left">
 							<h2>Test Header 1</h2>
 					<p>Bex’s baby sister got a brand new toy; a bear that can talk and tell stories. Too bad Lainie doesn’t like it because it can’t actually talk. Bex tries to “fix” the bear for her, and now he can have actual conversations with her little sister...but he starts to make her nervous. Something about this bear with a mind of his own doesn’t sit right with her. Always whispering to Lainie like they have secrets. And even getting possessive of her when Bex wants to spend time alone with Lainie. Bex decides she needs to do something about this bear...but how can she destroy her baby sister’s new favorite toy?</p>
 					</div>
-						</div>
+                    <div class="episode-images"><img id="storytime-bear" src="../images/episodes_page/storytime-Bear.gif"/></div>
 					</div>
                 <div id="second">
-					<div class="story">
-						<div class="bg"></div>
-						<div class="float-right">
+						<div class="story float-left">
 							<h2>Test Header 2</h2>
 							<p>Sometimes when Bex’s projects get a little out of control, it can rub off on her friends. This time, Miranda got a little dose of magic; the ability to move objects with her mind. It’s all fun and games until Miranda starts to realize she can use this new power to force people to notice her, to listen to her, and to make them pay for mistreating her the way high school outcasts sometimes are. Bex needs to bring Miranda back from the dark side of magic before she makes a big mistake.</p>
-							</div>
 							</div>
 					</div>
 					
                 <div id="third">
-					<div class="story">
-						<div class="float-left">
+                    <div class="episode-images"><img id="isaacMagician" src="../images/episodes_page/IsaacMagiciansketch.jpg"/> </div>
+						<div class="story float-left">
 							<h2>Test Header 3</h2>
-					<p>Everyone always laughs at the weird kid who wears a top hat and cape to school. Everyone except Miranda and Bex, who think he’s cute. Q thinks they’re crazy; how can they have a crush on the dorky high school magician? To make things even more complicated, Bex cannot for the life of her figure out how he does his magic act. Is it possible that this guy might be using actual magic?</p>
-							</div>
-					</div>
+					<p>Everyone always laughs at the weird kid who wears a top hat and cape to school. Everyone except Miranda and Bex, who think he’s cute. Q thinks they’re crazy; how can they have a crush on the dorky high school magician? To make things even more complicated, Bex cannot for the life of her figure out how he does his magic act. Is it possible that this guy might be using actual magic?
+							</p>   
+                            </div>
 					</div>
                 
 				<div id="fourth">
-					<div class="story">
-                        <div class="retro-toy"></div>
-						<div class="float-left">
+                    <div class="episode-images"><img id="retro-toy" src="../images/episodes_page/Bex-90s-toy-Episode.gif"/></div>
+						<div class="story float-left">
 							<h2>Test Header 4</h2>
 					<p>There’s a new toy on the block--a new version of a classic 90s toy anyway. A robotic pet! It speaks its own language, has great big blinking eyes, and responds to  your phone.  Its invading everyone’s home; every kid thinks they HAVE to have one. Bex sees the commercials and remembers the one she had from the 90s; after rescuing it from the attic, she resurrects it and makes it better than it ever was. Bex’s dog Rouge does not like this epidemic at all. And Bex’s toy never seems to stay where she leaves it...and things are mysteriously breaking or going missing in the house...is this classic toy evil? What about the new ones that interact with your phone?</p>
-							</div>
-					</div>
+                        </div>
 					</div>
                 <div id="fifth">
-					<div class="story">
-						<div class="float-left">
+						<div class="story float-left">
 							<h2>Test Header 5</h2>
 					<p>Bex has a 4 foot secret admirer who she babysits twice a month. He’s 11 years old, devious, too smart for his own good, and thinks he’s too old for a babysitter...mentally at least. He knows Bex will never date an 11 year old, but he’s been doing pretty well with her online as a 16 year old high school student from a different school. Problem is, Bex wants to meet this fake 16 year old in person...so he tricks Bex into showing him a little bit about cyber magic while she babysits, so he can look/match his fake profile. Ever heard of in person Catfishing? This kid just invented it.</p>
 							</div>
 					</div>
-					</div>
-            </div>
-        </div>
-		<script src="../js/jquery-1.11.0.min.js"></script>
-		<script src="../js/jquery.localscroll-1.2.7-min.js"></script>
-		<script src="../js/jquery.parallax-1.1.3.js"></script>
-		<script src="../js/jquery.scrollTo-1.4.2-min.js"></script>
-		<script type="text/javascript">
-$(document).ready(function(){
-        $('#nav').localScroll(800);
-        //.parallax(xPosition, speedFactor, outerHeight) options:
-        //xPosition - Horizontal position of the element
-        //inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
-        //outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
-        $('#first').parallax("50%", 0.1);
-        $('.storytime-bear').parallax("85%", 0.4);
-        $('#second').parallax("50%", 0.1);
-        $('.bg').parallax("50%", 0.4);
-        $('#third').parallax("50%", 0.3);
-        $('#fourth').parallax("50%", 0.3);
-        $('.retro-toy').parallax("85%", 0.1);
-        $('#fifth').parallax('50%', 0.3);
-});
-</script>
+    
     </body>
 </html>
