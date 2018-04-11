@@ -12,6 +12,7 @@ red: #e75a49*/
     width: 40%;
     float: left;
     padding-left: 7px;
+    font-size: smaller;
 }
 
 .episode-images{
@@ -51,7 +52,6 @@ red: #e75a49*/
         color: black;
         height: 550px;
         margin: 0 auto;
-        overflow: hidden;
         padding: 10px;
         width: 80%;
 }
@@ -65,7 +65,6 @@ red: #e75a49*/
         padding: 10px;
         margin: 0 auto;
         width: 80%;
-        overflow: hidden;
         
 }
 
@@ -78,7 +77,6 @@ red: #e75a49*/
         padding: 10px;
         margin: 0 auto;
         width: 80%;
-        overflow: hidden;
 }
 
 
@@ -91,6 +89,5 @@ red: #e75a49*/
         padding: 10px;
         margin: 0 auto;
         width: 80%;
-        overflow: hidden;
 }
 
