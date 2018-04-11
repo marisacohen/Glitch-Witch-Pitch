@@ -1,11 +1,14 @@
 .marisa-description{
 	width: 100%;
     height: 40%;
+    display: inline-block;
 }
 
 .marisa-description img{
 	width: 15%;
 	height: 15%;
+    margin-right: 2%;
+    float:left;
 }
 
 .marisa-social-media{
@@ -26,12 +29,21 @@
 	margin-top: 12%;
 }
 
+.marisa-social-media a img:hover{
+    -webkit-transform: scale(1.4);
+        -ms-transform: scale(1.4);
+        transform: scale(1.4);
+        transform: scale(1.4);
+}
+.marisa-description h3{
+	margin: 0;
+    padding: 0;
+}
+
 .marisa-description p{
 	width: 80%;
 	height: 30%;
 	margin: 0;
-	float: right;
-
 }
 .alexandra-description{
 	width: 100%;
@@ -58,6 +70,13 @@
 	height: 2.5%;
     margin: .5%;
 	margin-top: 12%;
+}
+
+.alexandra-social-media a img:hover{
+    -webkit-transform: scale(1.4);
+        -ms-transform: scale(1.4);
+        transform: scale(1.4);
+        transform: scale(1.4);
 }
 
 .alexandra-description p{
