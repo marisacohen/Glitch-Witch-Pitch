@@ -61,17 +61,17 @@
 	
 }
 .main-image{
-    width: 30%;
+    width: 50%;
     float: left;
 }
 .character-copy{
-    width: 65%;
-    float: left;
+    width: 45%;
+    float: right;
     padding-left: 7px;
 }
 
 .main-image .standing-pose{
-    width: 38%;
+    width: 20%;
 }
 
 
