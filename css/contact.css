@@ -42,10 +42,11 @@
     padding: 0;
 }
 
-.marisa-description p{
+div.marisa-description p{
 	width: 80%;
 	height: 30%;
 	margin: 0;
+    text-indent: 4%;
 }
 .alexandra-description{
 	width: 100%;

@@ -9,29 +9,33 @@ grey: #354656
 red: #e75a49*/
 
 .story{
-    width: 40%;
+    width: 33%;
     float: left;
-    padding-left: 7px;
+    padding-left: 7%;
     font-size: smaller;
 }
 
 .episode-images{
-    width: 55%;
-    float: left;
+    height: 60%;
+    float: right;
     text-align: center;
+    padding-right: 7%;
    
 }
 
 .episode-images #storytime-bear{
-    width:60%;
+    height:100%;
+    padding-top: 30%;
 }
 
 .episode-images #isaacMagician{
-    width:60%;
+    height:100%;
+     padding-top: 30%;
 }
 
 .episode-images #retro-toy{
-    width:60%;
+    height:100%;
+     padding-top: 30%;
 }
 
 #first{
@@ -89,5 +93,13 @@ red: #e75a49*/
         padding: 10px;
         margin: 0 auto;
         width: 80%;
+}
+
+/*Media Query*/
+@media (max-width:980px){
+	.episode-images{
+    height: 53%;
+   
+}
 }
 
