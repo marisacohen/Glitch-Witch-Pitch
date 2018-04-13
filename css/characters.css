@@ -106,7 +106,10 @@ body{
     padding-right: 15%;
 }
 #rouge .main-image .standing-pose{
-    height: 120%;
+    height: 115%;
+}
+#topher .main-image .standing-pose{
+    height: 30%;
 }
 }
 
