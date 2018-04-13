@@ -93,7 +93,7 @@ body{
 }
     .character.active{
         width: 95%;
-        height: 550px;
+        height: 585px;
     }
     .main-image{
     height: 25%;
@@ -101,7 +101,7 @@ body{
     padding-left: 15%;
 }
 .character-copy{
-    width: 45%;
+    width: 40%;
     float: right;
     padding-right: 15%;
 }
