@@ -105,12 +105,12 @@ body{
     float: right;
     padding-right: 5%;
 }
-/*#rouge .main-image .standing-pose{
-    height: 115%;
+#rouge .main-image .standing-pose{
+    height: 199%;
 }
 #topher .main-image .standing-pose{
-    height: 240%;
-}*/
+    height: 400%;
+}
 }
 
 /*relationship image*/
