@@ -98,12 +98,12 @@ body{
     .main-image{
     height: 25%;
     float: left;
-    padding-left: 10%;
+    padding-left: 5%;
 }
 .character-copy{
-    width: 40%;
+    width: 45%;
     float: right;
-    padding-right: 10%;
+    padding-right: 5%;
 }
 /*#rouge .main-image .standing-pose{
     height: 115%;
