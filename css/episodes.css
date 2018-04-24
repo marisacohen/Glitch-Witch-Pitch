@@ -37,7 +37,10 @@ red: #e75a49*/
     height:100%;
      padding-top: 30%;
 }
-
+a.synopsis-btn{
+    float: left;
+    color: #0d0e10;
+}
 #first{
         /*background:url("../images/episodes_page/work-1.jpg") 50% 0 no-repeat fixed;*/
         background-color: #845aa2;
