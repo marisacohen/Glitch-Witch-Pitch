@@ -10,4 +10,6 @@ div{
     filter: alpha(opacity=70);
     width: 70%;
     margin: 0 auto;
+    padding: 5px;
+    border-bottom: 2px #7BCBA4 dashed;
 }

@@ -9,10 +9,14 @@ grey: #354656
 red: #e75a49*/
 
 .story{
-    width: 33%;
+    height: 33%;
     float: left;
     padding-left: 7%;
     font-size: smaller;
+}
+
+.float-left{
+    max-width: 460px;
 }
 
 .episode-images{
@@ -39,6 +43,9 @@ red: #e75a49*/
 }
 a.synopsis-btn{
     float: left;
+    position: relative;
+    top:55%;
+    right: 33%;
     color: #0d0e10;
 }
 #first{
