@@ -10,7 +10,7 @@ red: #e75a49*/
 
 .story{
     width: 33%;
-    /*height: 33%;*/
+    height: 33%;
     float: left;
     padding-left: 7%;
     font-size: smaller;
@@ -30,24 +30,43 @@ red: #e75a49*/
 
 .episode-images #storytime-bear{
     height:100%;
-    padding-top: 30%;
+    padding-top: 18%;
+    padding-left: 13%;
 }
 
 .episode-images #isaacMagician{
     height:100%;
-     padding-top: 30%;
+    padding-top: 10%;
+    padding-left: 13%;
 }
 
 .episode-images #retro-toy{
     height:100%;
-     padding-top: 30%;
+     padding-top: 15%;
+    padding-left: 13%;
 }
 a.synopsis-btn{
     float: left;
-    position: relative;
-    top:55%;
-    right: 33%;
     color: #0d0e10;
+}
+.grid_1,
+.grid_6 {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.grid_1 {
+  width: 60px;
+}
+.grid_6 {
+  width: 460px;
+}
+.prefix_1 {
+  padding-left: 80px;
+}
+suffix_10 {
+  padding-right: 800px;
 }
 #first{
         /*background:url("../images/episodes_page/work-1.jpg") 50% 0 no-repeat fixed;*/
