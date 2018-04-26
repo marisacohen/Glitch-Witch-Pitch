@@ -9,7 +9,8 @@ grey: #354656
 red: #e75a49*/
 
 .story{
-    height: 33%;
+    width: 33%;
+    /*height: 33%;*/
     float: left;
     padding-left: 7%;
     font-size: smaller;
