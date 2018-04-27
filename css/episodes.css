@@ -1,4 +1,3 @@
-
 /*Color Pattern for Episode Divs*/
 /*purple: #845aa2
 pink: #ec5288
@@ -8,128 +7,108 @@ blue: #2d46a2
 grey: #354656
 red: #e75a49*/
 
+body{
+    background-color: #0d0e10;
+}
+.episode{
+    width: 1500px;
+    height: 550px;
+    margin: 0 auto;
+    color: black;
+}
+
 .story{
-    width: 33%;
-    height: 33%;
+    display: block;
     float: left;
-    padding-left: 7%;
-    font-size: smaller;
-}
-
-.float-left{
-    max-width: 460px;
-}
-
-.episode-images{
-    height: 60%;
-    float: right;
+    margin-left: 45px;
+    margin-right: 25px;
     text-align: center;
-    padding-right: 7%;
-   
+    width: 700px;
+    padding-top: 110px;
 }
 
-.episode-images #storytime-bear{
-    height:100%;
-    padding-top: 18%;
-    padding-left: 13%;
+.episode-image{
+    display: block;
+    float: right;
+    margin-left: 5px;
+    margin-left: 5px;
+    width: 650px;
 }
 
-.episode-images #isaacMagician{
-    height:100%;
-    padding-top: 10%;
-    padding-left: 13%;
+.episode-image img{
+    height: 520px;
 }
 
-.episode-images #retro-toy{
-    height:100%;
-     padding-top: 15%;
-    padding-left: 13%;
-}
-a.synopsis-btn{
-    float: left;
-    color: #0d0e10;
-}
-.grid_1,
-.grid_6 {
-  display: inline;
-  float: left;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-.grid_1 {
-  width: 60px;
-}
-.grid_6 {
-  width: 460px;
-}
-.prefix_1 {
-  padding-left: 80px;
-}
-suffix_10 {
-  padding-right: 800px;
-}
 #first{
-        /*background:url("../images/episodes_page/work-1.jpg") 50% 0 no-repeat fixed;*/
-        background-color: #845aa2;
-		background-size: cover;
-        color: black;
-        height: 550px;
-        margin: 0 auto;
-        padding: 10px;
-        width: 80%;
+    background-color: #845aa2;
 }
 
 #second{
-        /*background: url("../images/episodes_page/secondBG-1.jpg") 50% 0 no-repeat fixed;*/
-        background-color: #ec5288;
-		background-size: cover;
-        color: black;
-        height: 550px;
-        margin: 0 auto;
-        padding: 10px;
-        width: 80%;
+    background-color: #ec5288;
 }
 
 #third{
-        /*background: url("../images/episodes_page/creative-1.jpg") 50% 0 no-repeat fixed;*/
-        background-color: #7bcba4;
-		background-size: cover;
-        color: black;
-        height: 550px;
-        padding: 10px;
-        margin: 0 auto;
-        width: 80%;
-        
+    background-color: #7bcba4;
 }
-
 #fourth{
-        /*background: url("../images/episodes_page/creative-1.jpg") 50% 0 no-repeat fixed;*/
-        background-color: #e6bd6e;
-		background-size: cover;
-        color: black;
-        height: 550px;
-        padding: 10px;
-        margin: 0 auto;
-        width: 80%;
+    background-color: #e6bd6e;
 }
-
-
 #fifth{
-        /* background: url("../images/episodes_page/creative-1.jpg") 50% 0 no-repeat fixed;*/
     background-color: #2d46a2;
-		background-size: cover;
-        color: black;
-        height: 550px;
-        padding: 10px;
-        margin: 0 auto;
-        width: 80%;
 }
 
-/*Media Query*/
-@media (max-width:980px){
-	.episode-images{
-    height: 53%;
-   
+@media (max-width:1300px){
+    .episode{
+    width: 1100px;
+    height: 550px;
+    margin: 0 auto;
+    background-color: white;
+}
+    .story{
+    display: block;
+    float: left;
+    margin-left: 17px;
+    margin-right: 17px;
+    text-align: center;
+    width: 510px;
+    padding-top: 110px;
+}
+
+.episode-image{
+    display: block;
+    float: right;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 540px;
 }
 }
 
+@media (max-width:772px){
+    .episode{
+    width: 650px;
+    height: 550px;
+    margin: 0 auto;
+    background-color: white;
+}
+    .story{
+    display: block;
+    float: left;
+    margin-left: 17px;
+    margin-right: 17px;
+    text-align: center;
+    width: 290px;
+    padding-top: 90px;
+}
+
+.episode-image{
+    display: block;
+    float: right;
+    margin-left: 5px;
+    /*margin-right: 5px;*/
+    width: 315px;
+}
+    .episode-image img{
+    height: 260px;
+    padding-top: 150px;
+}
+}
