@@ -112,7 +112,7 @@ header{
     margin-right: 17px;
     text-align: center;
     width: 510px;
-    padding-top: 75px;
+    padding-top: 15px;
 }
 
 .episode-image{
@@ -122,6 +122,13 @@ header{
     margin-right: 5px;
     width: 540px;
 }
+    #second .story{
+        padding-top: 75px;
+    }
+    #third .story{
+        padding-top: 75px;
+    }
+    
     #logo img{
     width: 175px;
 }
@@ -130,7 +137,7 @@ header{
 @media (max-width:772px){
     .episode{
     width: 650px;
-    height: 690px;
+    height: 725px;
     margin: 0 auto;
     background-color: white;
 }
