@@ -142,7 +142,7 @@ header{
 @media (max-width:772px){
     .episode{
     width: 650px;
-    height: 775px;
+    height: 785px;
     margin: 0 auto;
     background-color: white;
 }
@@ -186,7 +186,7 @@ header{
     }
     
      #fourth{
-        height: 775px;
+        height: 785px;
     }
     
     /*Nav Bar*/
