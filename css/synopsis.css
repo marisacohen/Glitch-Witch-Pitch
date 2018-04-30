@@ -3,6 +3,12 @@
     color: #7BCBA4;
 }
 
+body{
+    background: url("../images/episodes_page/synopsis_background.jpg") 10% 0 no-repeat fixed;
+    background-size: cover;
+    height: 1600px;
+}
+
 
 div{
     background-color: #0d0e10;
