@@ -103,7 +103,6 @@ header{
     width: 1100px;
     height: 575px;
     margin: 0 auto;
-    background-color: white;
 }
     .story{
     display: block;
@@ -123,10 +122,16 @@ header{
     width: 540px;
 }
     #second .story{
-        padding-top: 75px;
+        padding-top: 65px;
     }
     #third .story{
         padding-top: 75px;
+    }
+    #fourth{
+        height: 585px;
+    }
+    #fourth .story{
+        padding-top: 10px;
     }
     
     #logo img{
@@ -137,7 +142,7 @@ header{
 @media (max-width:772px){
     .episode{
     width: 650px;
-    height: 725px;
+    height: 775px;
     margin: 0 auto;
     background-color: white;
 }
@@ -165,12 +170,23 @@ header{
     #second .story{
         padding-top: 80px;
     }
+    
+    #second{
+        height: 725px;
+    }
     #third .story{
         padding-top: 70px;
+    }
+    #third{
+        height: 725px;
     }
     
     #third .episode-image img{
         padding-top: 125px;
+    }
+    
+     #fourth{
+        height: 775px;
     }
     
     /*Nav Bar*/
