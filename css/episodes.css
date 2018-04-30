@@ -101,7 +101,7 @@ header{
 @media (max-width:1300px){
     .episode{
     width: 1100px;
-    height: 555px;
+    height: 575px;
     margin: 0 auto;
     background-color: white;
 }
@@ -112,7 +112,7 @@ header{
     margin-right: 17px;
     text-align: center;
     width: 510px;
-    padding-top: 80px;
+    padding-top: 75px;
 }
 
 .episode-image{
@@ -130,7 +130,7 @@ header{
 @media (max-width:772px){
     .episode{
     width: 650px;
-    height: 680px;
+    height: 690px;
     margin: 0 auto;
     background-color: white;
 }
@@ -141,7 +141,7 @@ header{
     margin-right: 17px;
     text-align: center;
     width: 290px;
-    padding-top: 25px;
+    padding-top: 15px;
 }
 
 .episode-image{
@@ -158,8 +158,12 @@ header{
     #second .story{
         padding-top: 80px;
     }
-    #third .story, #third .episode-image img{
-        padding-top: 80px;
+    #third .story{
+        padding-top: 70px;
+    }
+    
+    #third .episode-image img{
+        padding-top: 125px;
     }
     
     /*Nav Bar*/
