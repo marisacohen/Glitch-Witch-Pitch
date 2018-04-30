@@ -67,13 +67,15 @@ nav{
     width: 100%;
     text-align: center;
     margin-top: 50px;
+    margin-left: 50px;
 }
 nav a{
     padding: 10px;
 }
 
 .nav-links img{
-    width: 70px;
+    width: 69px;
+    padding-top: 40px;
 }
 
 li{
@@ -82,6 +84,17 @@ li{
 
 header{
     color: #7BCBA4;
+}
+
+/*Logo*/
+#logo img{
+    width: 205px;
+}
+
+#logo{
+   position: absolute;
+    left: 0px;
+    top: 0px;
 }
 
 
@@ -108,6 +121,9 @@ header{
     margin-left: 5px;
     margin-right: 5px;
     width: 540px;
+}
+    #logo img{
+    width: 175px;
 }
 }
 
@@ -149,5 +165,11 @@ header{
     /*Nav Bar*/
 .nav-links img{
     width: 50px;
+}
+    #logo img{
+    width: 115px;
+}
+    #logo{
+    top: 15px;
 }
 }
