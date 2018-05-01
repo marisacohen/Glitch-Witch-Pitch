@@ -10,7 +10,6 @@ h1{
 
 a{
     text-decoration: none;
-    color: #7BCBA4;
 }
 
 /* Slideshow Container*/
@@ -105,10 +104,33 @@ a{
 }
 
 /*Thumbnail CSS*/
-li{
+.thumbnails li{
     list-style-type: none;
+    position: relative;
+	width: 15%;
+    float: left;
+    margin: 1% ;
+    cursor: pointer;
 }
 
 .thumb img{
-    width: 15%;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #7BCBA4;
+}
+
+.thumb:hover .overlay{
+    opacity: .5;
 }
