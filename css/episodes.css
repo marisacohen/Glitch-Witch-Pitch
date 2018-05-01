@@ -142,7 +142,7 @@ header{
 @media (max-width:772px){
     .episode{
     width: 650px;
-    height: 795px;
+    height: 815px;
     margin: 0 auto;
     background-color: white;
 }
@@ -172,7 +172,7 @@ header{
     }
     
     #second{
-        height: 725px;
+        height: 750px;
     }
     #third .story{
         padding-top: 70px;
@@ -186,7 +186,7 @@ header{
     }
     
      #fourth{
-        height: 795px;
+        height: 815px;
     }
     
     /*Nav Bar*/
