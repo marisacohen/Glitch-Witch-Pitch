@@ -25,7 +25,7 @@ body{
 
 .character-nav ul{
 	list-style-type: none;
-	margin: 0;
+	margin-top: -5%;
 	padding: 0;
 }
 
@@ -131,7 +131,7 @@ body{
     width: 80%;
     margin: 0 auto;
     text-align: center;
-    margin-top: -8%;
+    margin-top: -5%;
 }
 
 #character-lineup img{
