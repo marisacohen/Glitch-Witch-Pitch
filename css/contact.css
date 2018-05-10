@@ -98,4 +98,7 @@
     .alexandra-description{
         width:1100px;
     }
+    .alexandra-description p{
+	width: 841px;
+}
 }
