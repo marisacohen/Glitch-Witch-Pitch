@@ -18,17 +18,13 @@
 }
 
 /*Parts of Page*/
-#thumbnails{
-    width: 1000px;
-}
-#play-all{
-    text-align: center;
-    width: 300px;
-}
-
-.active {
+.thumbnail-column{
+    width: 250px;
+    height: 400px;
+    float: right;
     border: 3px solid #7BCBA4;
 }
+
 
 .storyboards{
     width: 1300px;
@@ -36,19 +32,12 @@
 }
 
 
-/*Columns*/
-
-.column {
-    float: left;
-}
-
 /*Thumbnail CSS*/
 .thumbnails li{
     list-style-type: none;
     position: relative;
 	width: 150px;
     float: left;
-    margin: 1%;
     cursor: pointer;
 }
 
