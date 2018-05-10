@@ -1,5 +1,5 @@
 body{
-    margin: auto;
+    margin: 0 auto;
 }
 .marisa-description{
 	width: 1500px;
@@ -114,6 +114,7 @@ body{
 }
     .marisa-social-media{
     margin-top: 0px;
+    margin-right: -25px;
 }
     .marisa-social-media a img{
 	margin-top: 0px;
