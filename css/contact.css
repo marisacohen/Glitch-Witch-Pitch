@@ -1,34 +1,38 @@
 .marisa-description{
-	width: 100%;
-    height: 40%;
+	width: 1500px;
     display: inline-block;
 }
 
 .marisa-description img{
-	width: 15%;
-	height: 15%;
-    margin-right: 2%;
+	width: 240px;
+    margin-right: 20px;
     float:left;
+}
+.marisa-description h3{
+	margin: 0;
+    padding: 0;
+}
+
+.marisa-description p{
+	width: 1160px;
+	margin: 0;
+    text-indent: 50px;
 }
 
 .marisa-social-media{
-	width: 100%;
+	width: 1500px;
 	float: right;
-    position: absolute;
-    bottom: 20%;
+    margin-top: -150px;
 }
 
 .marisa-social-media img{
-	width: 15%;
-	height: 15%;
+	width: 230px;
 	float: right;
 }
 
 .marisa-social-media a img{
-	width: 2.5%;
-	height: 2.5%;
-    margin: .5%;
-	margin-top: 12%;
+	width: 40px;
+	margin-top: 180px;
 }
 
 .marisa-social-media a img:hover{
@@ -37,42 +41,44 @@
         transform: scale(1.4);
         transform: scale(1.4);
 }
-.marisa-description h3{
+
+.alexandra-description{
+	width: 1500px;
+    display: inline-block;
+    padding-top: 50px;
+}
+
+.alexandra-description img{
+	width: 240px;
+    margin-right: 20px;
+    float:left;
+}
+
+.alexandra-description h3{
 	margin: 0;
     padding: 0;
 }
 
-div.marisa-description p{
-	width: 80%;
-	height: 30%;
+.alexandra-description p{
+	width: 1160px;
 	margin: 0;
-    text-indent: 4%;
-}
-.alexandra-description{
-	width: 100%;
-}
-
-.alexandra-description img{
-	width: 15%;
-	height: 15%;
+    text-indent: 50px;
 }
 
 .alexandra-social-media{
-	width: 100%;
+	width: 1500px;
 	float: right;
+    margin-top: -150px;
 }
 
 .alexandra-social-media img{
-	width: 15%;
-	height: 15%;
+	width: 250px;
 	float: right;
 }
 
 .alexandra-social-media a img{
-	width: 2.5%;
-	height: 2.5%;
-    margin: .5%;
-	margin-top: 12%;
+	width: 40px;
+	margin-top: 180px;
 }
 
 .alexandra-social-media a img:hover{
@@ -80,12 +86,4 @@ div.marisa-description p{
         -ms-transform: scale(1.4);
         transform: scale(1.4);
         transform: scale(1.4);
-}
-
-.alexandra-description p{
-	width: 80%;
-	height: 30%;
-	margin: 0;
-	float: right;
-
 }
