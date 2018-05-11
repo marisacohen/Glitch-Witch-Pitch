@@ -1,3 +1,11 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+div{
+    margin: 0 auto;
+}
+
 .marisa-description{
 	width: 1500px;
     display: inline-block;
@@ -87,9 +95,7 @@
         transform: scale(1.4);
 }
 
-div{
-    margin: 0 auto;
-}
+
 
 @media (max-width:1300px){
     .marisa-description{
