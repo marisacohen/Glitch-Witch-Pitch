@@ -127,6 +127,13 @@ div{
         width:650px;
     }
     .alexandra-description p{
-	width: 841px;
+	width: 700px;
+}
+    .alexandra-social-media{
+    margin-top: 0px;
+    margin-right: -30px;
+}
+    .alexandra-social-media a img{
+	margin-top: 0px;
 }
 }
