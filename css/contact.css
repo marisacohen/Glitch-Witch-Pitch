@@ -1,7 +1,6 @@
 .marisa-description{
 	width: 1500px;
     display: inline-block;
-    margin: 0 auto;
 }
 
 .marisa-description img{
@@ -11,7 +10,6 @@
 }
 .marisa-description h3{
 	margin: 0;
-    padding: 0;
 }
 
 .marisa-description p{
@@ -47,7 +45,6 @@
 	width: 1500px;
     display: inline-block;
     padding-top: 50px;
-    margin: 0 auto;
 }
 
 .alexandra-description img{
@@ -88,6 +85,10 @@
         -ms-transform: scale(1.4);
         transform: scale(1.4);
         transform: scale(1.4);
+}
+
+div{
+    margin: 0 auto;
 }
 
 @media (max-width:1300px){
