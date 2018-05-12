@@ -12,6 +12,8 @@ $('.character-nav').each(function(){               // Find lists of tabs
     if (id && !$link.is('.active')) {           // If not currently active
         $tab = $link.parent().toggleClass('active');   // Toggles between tabs with active class
       $panel = $(id).toggleClass('active');        // Toggles between panels with active class
+    $('html, body').stop().animate({
+            scrollTop: $(id).offset().top}, 1000);
         
         $tab.siblings().removeClass('active');                 // Make sibling tabs inactive
       $panel.siblings().removeClass('active');               // Make sibling panels inactive

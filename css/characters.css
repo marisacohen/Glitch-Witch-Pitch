@@ -1,6 +1,11 @@
 body{
     overflow-x: hidden;
 }
+
+h2{
+    margin: 0;
+    padding: 0;
+}
 /*Tabs Design*/
 .character-panels {
     overflow: hidden;
