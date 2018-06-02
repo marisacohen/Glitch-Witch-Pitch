@@ -5,6 +5,7 @@ var modal = (function(){
     var $close = $('<button role="button" class="modal-close">close</button>');
     
     $modal.append($content, $close);
+    
     $close.on('click', function(e){
         e.preventDefault();
         modal.close();

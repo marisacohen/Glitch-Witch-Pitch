@@ -60,7 +60,8 @@ h2{
 
 .character.active {
 	display: inline-block;
-	background-color: #371E64;
+	/*background-color: #371E64;*/
+    color: #0d0e10;
 	width: 80%;
     height: 550px;
     padding: 10px;
@@ -81,11 +82,61 @@ h2{
     height: 270%;
     margin: 0 auto;
 }
+#bex{
+    background-color: #845aa2;
+}
+
+#eric{
+    background-color: #ec5288;
+}
+
+#miranda{
+    background-color: #7bcba4;
+}
+
+#q{
+    background-color: #e6bd6e;
+}
+
+#lauren{
+    background-color: #2d46a2;
+}
+
+#josh{
+    background-color: #354656;
+}
+
+#rouge{
+    background-color: #e75a49;
+}
 
 #rouge .main-image .standing-pose{
     height: 145%;
 }
 
+#bennett{
+    background-color: #845aa2;
+}
+
+#isaac{
+    background-color: #ec5288;
+}
+
+#jenna{
+    background-color: #7bcba4;
+}
+
+#joey{
+    background-color: #e6bd6e;
+}
+
+#lainie{
+    background-color: #2d46a2;
+}
+
+#topher{
+    background-color: #e75a49;
+}
 
 /*Media Query*/
 
