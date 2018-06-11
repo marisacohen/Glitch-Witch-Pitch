@@ -110,9 +110,9 @@ h2{
     background-color: #e75a49;
 }
 
-#rouge .main-image .standing-pose{
+/*#rouge .main-image .standing-pose{
     height: 145%;
-}
+}*/
 
 #bennett{
     background-color: #845aa2;
@@ -151,22 +151,22 @@ h2{
         width: 90%;
         height: 610px;
     }
-    .main-image{
+    /*.main-image{
     height: 25%;
     float: left;
     padding-left: 5%;
-}
+}*/
 .character-copy{
     width: 45%;
     float: right;
     padding-right: 5%;
 }
-#rouge .main-image .standing-pose{
+/*#rouge .main-image .standing-pose{
     height: 199%;
 }
 #topher .main-image .standing-pose{
     height: 400%;
-}
+}*/
 }
 
 /*relationship image*/
