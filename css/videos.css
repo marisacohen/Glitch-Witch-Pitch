@@ -1,66 +1,63 @@
+body{
+    overflow-x: hidden;
+}
+.videoGallery{
+    width: 90%;
+}
 /*VideoPlayer Styling*/
 #videoPlayer {
   position: relative;
-  margin-left: 30%;
-  /*width: 400px;
-  height: 270px;*/
+  margin-left: 20%;
   overflow: hidden;
 }
 
-@media (max-width:375px){
-    #videoPlayer{
-        margin-left: 10%;
-        width: 80%;
-        height: 60%;
-    }
-}
-
-/*@media (min-width:768px){
-    #videoPlayer{
-        width: 90%;
-        height: 90%;
-        
-    }
-}*/
-
-#videoPlayer img{
-  position: absolute;
-  max-width: 100%;
-  max-height: 100%;
-  top: 50%;
-  left: 50%;
-}
-
-/*Thumbnail*/
-
-#thumbnails{
-  margin: 20px;
-  padding: 20px;
-  width: 70%;
-}
-
-.active {
+/*Parts of Page*/
+.thumbnail-column{
+    width: 15%;
+    height: 490px;
+    float: right;
     border: 3px solid #7BCBA4;
 }
 
+
+/*Thumbnail CSS*/
 .thumb{
-	width: 15%;
+    width: 95%;
     cursor: pointer;
+    margin-left: 5%;
 }
 
-/*Parts of Page*/
-#play-all{
-	width: 20%;
-    text-align: center;
+@media (max-width:1500px){
+  #videoPlayer {
+  margin-left: 15%;
+}
+    
+    
+}
+
+@media (max-width:1300px){
+  #videoPlayer {
+  margin-left: 10%;
+  width: 70%;
+}
+/*
+@media (max-width:772px){
+  .videoGallery{
+    width: 600px;
+}
+    .thumbnail-column{
+    width: 600px;
+    height: 200px;
+    margin-right: -11%;
+    
+    }
+#videoPlayer {
+  margin-left: 11%;
+        
+}
+.storyboards{
+    width: 600px;
+}
+    
    
-}
-
-#play-all a img{
-    width: 75%;
-}
-
-/*Columns*/
-
-.column {
-    float: left;
-}
+}*/

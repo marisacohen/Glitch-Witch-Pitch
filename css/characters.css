@@ -1,3 +1,11 @@
+body{
+    overflow-x: hidden;
+}
+
+h2{
+    margin: 0;
+    padding: 0;
+}
 /*Tabs Design*/
 .character-panels {
     overflow: hidden;
@@ -16,13 +24,13 @@
 }
 
 .character-panels a img{
-	width: 8%;
-	height: 8%;
+	width: 6%;
+	height: 6%;
 }
 
 .character-nav ul{
 	list-style-type: none;
-	margin: 0;
+	margin-top: -5%;
 	padding: 0;
 }
 
@@ -42,45 +50,97 @@
         -ms-transform: scale(1.3);
         transform: scale(1.3);
 }
+
+
 /*Panels*/
 .character {
-    display: none;
-	height: 80%;
-    overflow: hidden;	
+    display: none;	
 	margin: 15px 0 0 0;
 }
 
 .character.active {
 	display: inline-block;
-	background-color: #371E64;
-	/*width: 70%;*/
-    height: 380px;
+	/*background-color: #371E64;*/
+    color: #0d0e10;
+	width: 80%;
+    height: 550px;
     padding: 10px;
-	
+    margin: 15px 0 0 0;
 }
-.character h3{
-   
-    text-align: center;
-    margin: 20 auto;
-    
-}
-.character p {
-	width: 45%;
-    height: 60%;
+.main-image{
+    height: 35%;
     float: left;
+    padding-left: 15%;
+}
+.character-copy{
+    width: 45%;
+    float: right;
+    padding-right: 15%;
 }
 
-.main-image img{
-	width: 15%;
-    float: left;
-    padding-left: 5%;
-    padding-right: 5%;
-	
+.main-image .standing-pose{
+    height: 270%;
+    margin: 0 auto;
+}
+#bex{
+    background-color: #845aa2;
+}
+
+#eric{
+    background-color: #ec5288;
+}
+
+#miranda{
+    background-color: #7bcba4;
+}
+
+#q{
+    background-color: #e6bd6e;
+}
+
+#lauren{
+    background-color: #2d46a2;
+}
+
+#josh{
+    background-color: #354656;
+}
+
+#rouge{
+    background-color: #e75a49;
+}
+
+/*#rouge .main-image .standing-pose{
+    height: 145%;
+}*/
+
+#bennett{
+    background-color: #845aa2;
+}
+
+#isaac{
+    background-color: #ec5288;
+}
+
+#jenna{
+    background-color: #7bcba4;
+}
+
+#joey{
+    background-color: #e6bd6e;
+}
+
+#lainie{
+    background-color: #2d46a2;
+}
+
+#topher{
+    background-color: #e75a49;
 }
 
 /*Media Query*/
 
-@media (max-width:900px){
+@media (max-width:1120px){
 	.character-nav li img{
     width: 50px;
     height: 50px;
@@ -88,9 +148,25 @@
     border-radius: 75px;*/
 }
     .character.active{
-        width: 100%;
-        height: 380px;
+        width: 90%;
+        height: 610px;
     }
+    /*.main-image{
+    height: 25%;
+    float: left;
+    padding-left: 5%;
+}*/
+.character-copy{
+    width: 45%;
+    float: right;
+    padding-right: 5%;
+}
+/*#rouge .main-image .standing-pose{
+    height: 199%;
+}
+#topher .main-image .standing-pose{
+    height: 400%;
+}*/
 }
 
 /*relationship image*/
@@ -105,4 +181,15 @@
 	padding: 10px;
 	text-align: center;
     cursor: pointer;
+}
+
+#character-lineup{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: -5%;
+}
+
+#character-lineup img{
+    width:80%;
 }

@@ -49,3 +49,13 @@
 .front{
     z-index: 1;
 }
+
+/*Media Query*/
+@media (max-width:980px){
+	#bex-eyes-follow{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-right: -50%;
+}
+}

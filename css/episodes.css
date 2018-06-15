@@ -1,4 +1,3 @@
-
 /*Color Pattern for Episode Divs*/
 /*purple: #845aa2
 pink: #ec5288
@@ -8,90 +7,150 @@ blue: #2d46a2
 grey: #354656
 red: #e75a49*/
 
+body{
+    background-color: #0d0e10;
+    font-family: 'Mina', sans-serif;
+    font-size: 100%;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+  font-size-adjust: 0.5;
+}
+
+.episode{
+    width: 1500px;
+    height: 550px;
+    margin: 0 auto;
+    color: black;
+    font-size: 1em;
+  /* equivalent to 16px */
+  line-height: 1.375;
+  /* equivalent to 20px */
+}
+
 .story{
-    width: 40%;
+    display: block;
     float: left;
-    padding-left: 7px;
-}
-
-.episode-images{
-    width: 55%;
-    float: left;
+    margin-left: 45px;
+    margin-right: 25px;
     text-align: center;
-    display: table-cell;
-    vertical-align: middle;
+    width: 700px;
+    padding-top: 110px;
 }
 
-.episode-images #storytime-bear{
-    width:60%;
+.episode-image{
+    display: block;
+    float: right;
+    margin-left: 5px;
+    margin-left: 5px;
+    width: 650px;
 }
 
-.episode-images #isaacMagician{
-    width:60%;
+.episode-image img{
+    height: 520px;
 }
 
-.episode-images #retro-toy{
-    width:60%;
+#isaacMagician{
+    padding-top: 15px;
 }
 
 #first{
-        /*background:url("../images/episodes_page/work-1.jpg") 50% 0 no-repeat fixed;*/
-        background-color: #845aa2;
-		background-size: cover;
-        color: black;
-        height: 550px;
-        margin: 0 auto;
-        padding: 10px;
-        width: 80%;
+    background-color: #845aa2;
 }
 
 #second{
-        /*background: url("../images/episodes_page/secondBG-1.jpg") 50% 0 no-repeat fixed;*/
-        background-color: #ec5288;
-		background-size: cover;
-        color: black;
-        height: 550px;
-        margin: 0 auto;
-        overflow: hidden;
-        padding: 10px;
-        width: 80%;
+    background-color: #ec5288;
 }
 
 #third{
-        /*background: url("../images/episodes_page/creative-1.jpg") 50% 0 no-repeat fixed;*/
-        background-color: #7bcba4;
-		background-size: cover;
-        color: black;
-        height: 550px;
-        padding: 10px;
-        margin: 0 auto;
-        width: 80%;
-        overflow: hidden;
-        
+    background-color: #7bcba4;
 }
-
 #fourth{
-        /*background: url("../images/episodes_page/creative-1.jpg") 50% 0 no-repeat fixed;*/
-        background-color: #e6bd6e;
-		background-size: cover;
-        color: black;
-        height: 550px;
-        padding: 10px;
-        margin: 0 auto;
-        width: 80%;
-        overflow: hidden;
+    background-color: #e6bd6e;
 }
-
-
 #fifth{
-        /* background: url("../images/episodes_page/creative-1.jpg") 50% 0 no-repeat fixed;*/
     background-color: #2d46a2;
-		background-size: cover;
-        color: black;
-        height: 550px;
-        padding: 10px;
-        margin: 0 auto;
-        width: 80%;
-        overflow: hidden;
 }
 
+@media (max-width:1300px){
+    .episode{
+    width: 1100px;
+    height: 575px;
+    margin: 0 auto;
+}
+    .story{
+    display: block;
+    float: left;
+    margin-left: 17px;
+    margin-right: 17px;
+    text-align: center;
+    width: 510px;
+    padding-top: 15px;
+}
+
+.episode-image{
+    display: block;
+    float: right;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 540px;
+}
+    #second .story{
+        padding-top: 65px;
+    }
+    #third .story{
+        padding-top: 75px;
+    }
+    #fourth{
+        height: 585px;
+    }
+    #fourth .story{
+        padding-top: 10px;
+    }
+    
+  
+}
+
+@media (max-width:772px){
+    .episode{
+    width: 650px;
+    height: 675px;
+    margin: 0 auto;
+    background-color: white;
+    font-size: 1em;
+    line-height: 1.25;
+}
+    .story{
+    display: block;
+    float: left;
+    margin-left: 17px;
+    margin-right: 17px;
+    text-align: center;
+    width: 290px;
+    padding-top: 50px;
+}
+
+.episode-image{
+    display: block;
+    float: right;
+    margin-left: 5px;
+    /*margin-right: 5px;*/
+    width: 315px;
+}
+    .episode-image img{
+    height: 260px;
+    padding-top: 150px;
+}
+    #third .episode-image img{
+        padding-top: 125px;
+    }
+    
+    /*Nav Bar*/
+.nav-links img{
+    width: 49px;
+}
+    #logo img{
+    width: 100px;
+}
+   
+}

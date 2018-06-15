@@ -7,7 +7,7 @@ $('.character-nav').each(function(){               // Find lists of tabs
   $this.on('click','.character-btn', function(e) { // When click on a tab
     e.preventDefault();                           // Prevent link behavior
     var $link = $(this),                          // Store the current link
-        id = this.hash;                          // Get href of clicked tab 
+        id = this.hash;                          // Get href of clicked tab
 
     if (id && !$link.is('.active')) {           // If not currently active
         $tab = $link.parent().toggleClass('active');   // Toggles between tabs with active class
