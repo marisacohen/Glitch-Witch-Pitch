@@ -2,66 +2,48 @@ body{
 	background-color: #0d0e10;
 	color: #7BCBA4;
 	background-image: url('../images/Pink-pixels-background.png');
-	background-repeat: no-repeat;
-	background-size: 100%;
+    background-repeat: repeat;
+	background-size: 80vw;
+	/*background-repeat: no-repeat;
+	background-size: 72vw;*/
 	background-attachment: fixed;
 	background-position: center;
-    overflow: hidden;
+    overflow-x: hidden;
     font-family: 'Mina', sans-serif;
 }
 
 /*Centers the content vertically*/
 #content{
-        Position: absolute;
+        /*position: absolute;
         top: 50%;
-        transform: translateY(-50%);
+        transform: translateY(-50%);*/
         margin: 0px auto;
         margin-top: auto;
-        margin: auto
-    
     }
 
-ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-li{
-    display: inline;
-}
-
 /*Main Picture size and Positioning*/
-#mainpic{
-    float: left;
-    width: 70%;
-	height: 95%;
-}
 #mainpic img{
-	width:100%;
-    height: 100%;
-    margin: 0px auto;
-    left: 0px;
-    top: 0px;
-    float: left;
+    width:90vw;
+	/*width:70vw;*/
+    display: block;
+    margin: 0 auto;
+    /*float: left;*/
     z-index: -1;
 }
 
 /*Button Positioning*/
 .btn {
-    padding-top: 5%;
-    margin-top: .5%;
-    margin-right: 10%;
+    margin-top: -2.5vw;
+    text-align: center;
+    /*padding-top: 5vw;
+    margin-top: .6vw;
+    margin-right: -20vw;*/
 }
 
 .btn a img {
-	width: 20%;
-	height: 10.2%;
-	padding-top: 6;
-	padding-right: 6;
-	padding-left: 6;
-	padding-bottom: 6;
-	float: right;
+    width: 50vw;
+	/*width: 19vw;
+	float: right;*/
 }
 
 .btn a img:hover
@@ -72,13 +54,12 @@ li{
 }
 	
 /*Social Media Positioning*/
-#social-media{
-	width: 25%;
-	height: 25%;
+/*#social-media{
+	width: 25vw;
 	float: right;
 	text-align: center;
-	margin-right: 10%;
-	margin-top: -8%;
+	margin-right: -20vw;
+	margin-top: -9vw;
 }
 #social-media h3{
 	color: #7BCBA4;
@@ -87,8 +68,6 @@ li{
 #social-media a img{
 	width: 15%;
 	height: 15%;
-	/*margin-top: 1%;
-	margin-left: 2%;*/
 }
 
 #social-media a img:hover{
@@ -96,4 +75,48 @@ li{
         -ms-transform: scale(1.4);
         transform: scale(1.4);
         transform: scale(1.4);
+}*/
+
+/*Tablet size*/
+@media(min-width:800px){
+    #mainpic img{
+    width:85vw;
+}
+    #btn_container {
+    margin-top: -9vw;
+}
+    .btn a img {
+    width: 30vw;
+} 
+}
+
+/*Desktop size*/
+@media(min-width:1000px){
+    body{
+    background-repeat: no-repeat;
+	background-size: 72vw;
+        overflow: hidden;
+    }
+    #content{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    #mainpic img{
+	width:70vw;
+    float: left;
+}
+    #btn_container {
+    margin-top: 1.5vw;
+}
+    .btn {
+    padding-top: 5vw;
+    margin-top: .6vw;
+    margin-right: -20vw;
+}
+    .btn a img {
+    width: 19vw;
+	float: right;
+    margin-top: -1.5vw;
+}
 }
