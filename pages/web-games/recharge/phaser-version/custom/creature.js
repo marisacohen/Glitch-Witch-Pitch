@@ -4247,8 +4247,8 @@ quat.fromMat3 = function(out, m) {
           i = 1;
         if ( m[8] > m[i*3+i] )
           i = 2;
-        var j = (i+1)%3;
-        var k = (i+2)%3;
+        var j = (i+1)vw3;
+        var k = (i+2)vw3;
         
         fRoot = Math.sqrt(m[i*3+i]-m[j*3+j]-m[k*3+k] + 1.0);
         out[i] = 0.5 * fRoot;

@@ -192,7 +192,7 @@ function Polygon(){
 Polygon.prototype.at = function(i){
     var v = this.vertices,
         s = v.length;
-    return v[i < 0 ? i % s + s : i % s];
+    return v[i < 0 ? i vw s + s : i vw s];
 };
 
 /**
@@ -304,7 +304,7 @@ Polygon.prototype.canSee = function(a,b) {
     }
     dist = Point.sqdist(this.at(a), this.at(b));
     for (var i = 0; i !== this.vertices.length; ++i) { // for each edge
-        if ((i + 1) % this.vertices.length === a || i === a) // ignore incident edges
+        if ((i + 1) vw this.vertices.length === a || i === a) // ignore incident edges
             continue;
         if (Point.leftOn(this.at(a), this.at(b), this.at(i + 1)) && Point.rightOn(this.at(a), this.at(b), this.at(i))) { // if diag intersects an edge
             l1[0] = this.at(a);
@@ -553,7 +553,7 @@ Polygon.prototype.quickDecomp = function(result,reflexVertices,steinerPoints,del
             }
 
             // if there are no vertices to connect to, choose a point in the middle
-            if (lowerIndex == (upperIndex + 1) % this.vertices.length) {
+            if (lowerIndex == (upperIndex + 1) vw this.vertices.length) {
                 //console.log("Case 1: Vertex("+i+"), lowerIndex("+lowerIndex+"), upperIndex("+upperIndex+"), poly.size("+this.vertices.length+")");
                 p[0] = (lowerInt[0] + upperInt[0]) / 2;
                 p[1] = (lowerInt[1] + upperInt[1]) / 2;
@@ -601,7 +601,7 @@ Polygon.prototype.quickDecomp = function(result,reflexVertices,steinerPoints,del
                         d = Point.sqdist(poly.at(i), poly.at(j));
                         if (d < closestDist) {
                             closestDist = d;
-                            closestIndex = j % this.vertices.length;
+                            closestIndex = j vw this.vertices.length;
                         }
                     }
                 }
@@ -649,7 +649,7 @@ Polygon.prototype.removeCollinearPoints = function(precision){
     for(var i=this.vertices.length-1; this.vertices.length>3 && i>=0; --i){
         if(Point.collinear(this.at(i-1),this.at(i),this.at(i+1),precision)){
             // Remove the middle point
-            this.vertices.splice(i%this.vertices.length,1);
+            this.vertices.splice(ivwthis.vertices.length,1);
             i--; // Jump one point forward. Otherwise we may get a chain removal
             num++;
         }
@@ -2201,8 +2201,8 @@ Narrowphase.prototype.circleConvex = function(
 
     // Check all edges first
     for(var i=0; i!==verts.length+1; i++){
-        var v0 = verts[i%verts.length],
-            v1 = verts[(i+1)%verts.length];
+        var v0 = verts[ivwverts.length],
+            v1 = verts[(i+1)vwverts.length];
 
         vec2.rotate(worldVertex0, v0, convexAngle);
         vec2.rotate(worldVertex1, v1, convexAngle);
@@ -2320,8 +2320,8 @@ function pointInConvex(worldPoint,convexShape,convexOffset,convexAngle){
         verts = convexShape.vertices,
         lastCross = null;
     for(var i=0; i!==verts.length+1; i++){
-        var v0 = verts[i%verts.length],
-            v1 = verts[(i+1)%verts.length];
+        var v0 = verts[ivwverts.length],
+            v1 = verts[(i+1)vwverts.length];
 
         // Transform vertices to world
         // @todo The point should be transformed to local coordinates in the convex, no need to transform each vertex
@@ -2413,8 +2413,8 @@ Narrowphase.prototype.particleConvex = function(
     // Check edges first
     var lastCross = null;
     for(var i=0; i!==verts.length+1; i++){
-        var v0 = verts[i%verts.length],
-            v1 = verts[(i+1)%verts.length];
+        var v0 = verts[ivwverts.length],
+            v1 = verts[(i+1)vwverts.length];
 
         // Transform vertices to world
         vec2.rotate(worldVertex0, v0, convexAngle);
@@ -2976,7 +2976,7 @@ Narrowphase.prototype.convexConvex = function(  bi,si,xi,ai, bj,sj,xj,aj, justTe
         for(var j=closestEdgeB; j<closestEdgeB+2; j++){
 
             // Get world point
-            var v = shapeB.vertices[(j+shapeB.vertices.length)%shapeB.vertices.length];
+            var v = shapeB.vertices[(j+shapeB.vertices.length)vwshapeB.vertices.length];
             vec2.rotate(worldPoint, v, angleB);
             add(worldPoint, worldPoint, offsetB);
 
@@ -2985,8 +2985,8 @@ Narrowphase.prototype.convexConvex = function(  bi,si,xi,ai, bj,sj,xj,aj, justTe
             // Loop over the 3 closest edges in convex A
             for(var i=closestEdgeA-1; i<closestEdgeA+2; i++){
 
-                var v0 = shapeA.vertices[(i  +shapeA.vertices.length)%shapeA.vertices.length],
-                    v1 = shapeA.vertices[(i+1+shapeA.vertices.length)%shapeA.vertices.length];
+                var v0 = shapeA.vertices[(i  +shapeA.vertices.length)vwshapeA.vertices.length],
+                    v1 = shapeA.vertices[(i+1+shapeA.vertices.length)vwshapeA.vertices.length];
 
                 // Construct the edge
                 vec2.rotate(worldPoint0, v0, angleA);
@@ -3022,8 +3022,8 @@ Narrowphase.prototype.convexConvex = function(  bi,si,xi,ai, bj,sj,xj,aj, justTe
                 numContacts++;
 
                 // Get center edge from body A
-                var v0 = shapeA.vertices[(closestEdgeA)   % shapeA.vertices.length],
-                    v1 = shapeA.vertices[(closestEdgeA+1) % shapeA.vertices.length];
+                var v0 = shapeA.vertices[(closestEdgeA)   vw shapeA.vertices.length],
+                    v1 = shapeA.vertices[(closestEdgeA+1) vw shapeA.vertices.length];
 
                 // Construct the edge
                 vec2.rotate(worldPoint0, v0, angleA);
@@ -3210,7 +3210,7 @@ Narrowphase.findSeparatingAxis = function(c1,offset1,angle1,c2,offset2,angle2,se
             for(var i=0; i!==c.vertices.length; i++){
                 // Get the world edge
                 vec2.rotate(worldPoint0, c.vertices[i], angle);
-                vec2.rotate(worldPoint1, c.vertices[(i+1)%c.vertices.length], angle);
+                vec2.rotate(worldPoint1, c.vertices[(i+1)vwc.vertices.length], angle);
 
                 sub(edge, worldPoint1, worldPoint0);
 
@@ -3321,7 +3321,7 @@ Narrowphase.getClosestEdge = function(c,angle,axis,flip){
         maxDot = -1;
     for(var i=0; i!==N; i++){
         // Get the edge
-        sub(edge, c.vertices[(i+1)%N], c.vertices[i%N]);
+        sub(edge, c.vertices[(i+1)vwN], c.vertices[ivwN]);
 
         // Get normal - just rotate 90 degrees since vertices are given in CCW
         vec2.rotate90cw(normal, edge);
@@ -3329,7 +3329,7 @@ Narrowphase.getClosestEdge = function(c,angle,axis,flip){
 
         var d = dot(normal,localAxis);
         if(closestEdge === -1 || d > maxDot){
-            closestEdge = i % N;
+            closestEdge = i vw N;
             maxDot = d;
         }
     }
@@ -6643,9 +6643,9 @@ Material.idCounter = 0;
         var al = n;
         while(al > 3)
         {
-            var i0 = avl[(i+0)%al];
-            var i1 = avl[(i+1)%al];
-            var i2 = avl[(i+2)%al];
+            var i0 = avl[(i+0)vwal];
+            var i1 = avl[(i+1)vwal];
+            var i2 = avl[(i+2)vwal];
 
             var ax = p[2*i0],  ay = p[2*i0+1];
             var bx = p[2*i1],  by = p[2*i1+1];
@@ -6665,7 +6665,7 @@ Material.idCounter = 0;
             if(earFound)
             {
                 tgs.push(i0, i1, i2);
-                avl.splice((i+1)%al, 1);
+                avl.splice((i+1)vwal, 1);
                 al--;
                 i= 0;
             }
@@ -6708,7 +6708,7 @@ Material.idCounter = 0;
         for(var i=0; i<ps.length; i++)
         {
             var isc = new PolyK._P(0,0);
-            isc = PolyK._GetLineIntersection(a, b, ps[i], ps[(i+1)%ps.length], isc);
+            isc = PolyK._GetLineIntersection(a, b, ps[i], ps[(i+1)vwps.length], isc);
 
             if(isc)
             {
@@ -6883,7 +6883,7 @@ Material.idCounter = 0;
         var n = ps.length;
         var nps = [];
         if(ind1<ind0) ind1 += n;
-        for(var i=ind0; i<= ind1; i++) nps.push(ps[i%n]);
+        for(var i=ind0; i<= ind1; i++) nps.push(ps[ivwn]);
         return nps;
     }
 
@@ -6892,7 +6892,7 @@ Material.idCounter = 0;
         var n = ps.length;
         while(true)
         {
-            ind = (ind+1)%n;
+            ind = (ind+1)vwn;
             if(ps[ind].flag) return ind;
         }
     }
@@ -7769,7 +7769,7 @@ function Body(options){
      *     // The angle property is not normalized to the interval 0 to 2*pi, it can be any value.
      *     // If you need a value between 0 and 2*pi, use the following function to normalize it.
      *     function normalizeAngle(angle){
-     *         angle = angle % (2*Math.PI);
+     *         angle = angle vw (2*Math.PI);
      *         if(angle < 0){
      *             angle += (2*Math.PI);
      *         }
@@ -9886,7 +9886,7 @@ function Convex(options){
         for(var i = 0; i < this.vertices.length; i++){
             // Get the world edge
             var worldPoint0 = this.vertices[i];
-            var worldPoint1 = this.vertices[(i+1) % this.vertices.length];
+            var worldPoint1 = this.vertices[(i+1) vw this.vertices.length];
 
             var normal = vec2.create();
             vec2.sub(normal, worldPoint1, worldPoint0);
@@ -10185,7 +10185,7 @@ Convex.prototype.raycast = function(result, ray, position, angle){
 
     for (var i = 0; i < n && !result.shouldStop(ray); i++) {
         var q1 = vertices[i];
-        var q2 = vertices[(i+1) % n];
+        var q2 = vertices[(i+1) vw n];
         var delta = vec2.getLineSegmentsIntersectionFraction(rayStart, rayEnd, q1, q2);
 
         if(delta >= 0){
@@ -10627,7 +10627,7 @@ Plane.prototype.updateBoundingRadius = function(){
  * @param  {Number} angle
  */
 Plane.prototype.computeAABB = function(out, position, angle){
-    var a = angle % (2 * Math.PI);
+    var a = angle vw (2 * Math.PI);
     var set = vec2.set;
     var max = 1e7;
     var lowerBound = out.lowerBound;
@@ -12882,7 +12882,7 @@ World.prototype.step = function(dt,timeSinceLastCalled,maxSubSteps){
             substeps++;
         }
 
-        var t = (this.accumulator % dt) / dt;
+        var t = (this.accumulator vw dt) / dt;
         for(var j=0; j!==this.bodies.length; j++){
             var b = this.bodies[j];
             vec2.lerp(b.interpolatedPosition, b.previousPosition, b.position, t);
