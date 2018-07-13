@@ -9,7 +9,7 @@ h2{
 /*Tabs Design*/
 .character-panels {
     overflow: hidden;
-    width: 100%;
+    width: 100vw;
     margin: 0px auto;
 	padding: 15px;
 	text-align: center;
@@ -24,13 +24,13 @@ h2{
 }
 
 .character-panels a img{
-	width: 6%;
-	height: 6%;
+	width: 6vw;
+	height: 6vw;
 }
 
 .character-nav ul{
 	list-style-type: none;
-	margin-top: -5%;
+	margin-top: -5vw;
 	padding: 0;
 }
 
@@ -62,24 +62,24 @@ h2{
 	display: inline-block;
 	/*background-color: #371E64;*/
     color: #0d0e10;
-	width: 80%;
+	width: 80vw;
     height: 550px;
     padding: 10px;
     margin: 15px 0 0 0;
 }
 .main-image{
-    height: 35%;
+    height: 35vw;
     float: left;
-    padding-left: 15%;
+    padding-left: 15vw;
 }
 .character-copy{
-    width: 45%;
+    width: 45vw;
     float: right;
-    padding-right: 15%;
+    padding-right: 15vw;
 }
 
 .main-image .standing-pose{
-    height: 270%;
+    height: 270vw;
     margin: 0 auto;
 }
 #bex{
@@ -111,7 +111,7 @@ h2{
 }
 
 /*#rouge .main-image .standing-pose{
-    height: 145%;
+    height: 145vw;
 }*/
 
 #bennett{
@@ -148,24 +148,24 @@ h2{
     border-radius: 75px;*/
 }
     .character.active{
-        width: 90%;
+        width: 90vw;
         height: 610px;
     }
     /*.main-image{
-    height: 25%;
+    height: 25vw;
     float: left;
-    padding-left: 5%;
+    padding-left: 5vw;
 }*/
 .character-copy{
-    width: 45%;
+    width: 45vw;
     float: right;
-    padding-right: 5%;
+    padding-right: 5vw;
 }
 /*#rouge .main-image .standing-pose{
-    height: 199%;
+    height: 199vw;
 }
 #topher .main-image .standing-pose{
-    height: 400%;
+    height: 400vw;
 }*/
 }
 
@@ -176,7 +176,7 @@ h2{
 }
 
 #character-relation img{
-	width: 25%;
+	width: 25vw;
 	margin: 0 auto;
 	padding: 10px;
 	text-align: center;
@@ -184,12 +184,12 @@ h2{
 }
 
 #character-lineup{
-    width: 80%;
+    width: 80vw;
     margin: 0 auto;
     text-align: center;
-    margin-top: -5%;
+    margin-top: -5vw;
 }
 
 #character-lineup img{
-    width:80%;
+    width:80vw;
 }
