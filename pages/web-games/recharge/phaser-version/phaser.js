@@ -221,7 +221,7 @@ function Polygon(){
 Polygon.prototype.at = function(i){
     var v = this.vertices,
         s = v.length;
-    return v[i < 0 ? i % s + s : i % s];
+    return v[i < 0 ? i vw s + s : i vw s];
 };
 
 /**
@@ -333,7 +333,7 @@ Polygon.prototype.canSee = function(a,b) {
     }
     dist = Point.sqdist(this.at(a), this.at(b));
     for (var i = 0; i !== this.vertices.length; ++i) { // for each edge
-        if ((i + 1) % this.vertices.length === a || i === a) // ignore incident edges
+        if ((i + 1) vw this.vertices.length === a || i === a) // ignore incident edges
             continue;
         if (Point.leftOn(this.at(a), this.at(b), this.at(i + 1)) && Point.rightOn(this.at(a), this.at(b), this.at(i))) { // if diag intersects an edge
             l1[0] = this.at(a);
@@ -582,7 +582,7 @@ Polygon.prototype.quickDecomp = function(result,reflexVertices,steinerPoints,del
             }
 
             // if there are no vertices to connect to, choose a point in the middle
-            if (lowerIndex == (upperIndex + 1) % this.vertices.length) {
+            if (lowerIndex == (upperIndex + 1) vw this.vertices.length) {
                 //console.log("Case 1: Vertex("+i+"), lowerIndex("+lowerIndex+"), upperIndex("+upperIndex+"), poly.size("+this.vertices.length+")");
                 p[0] = (lowerInt[0] + upperInt[0]) / 2;
                 p[1] = (lowerInt[1] + upperInt[1]) / 2;
@@ -630,7 +630,7 @@ Polygon.prototype.quickDecomp = function(result,reflexVertices,steinerPoints,del
                         d = Point.sqdist(poly.at(i), poly.at(j));
                         if (d < closestDist) {
                             closestDist = d;
-                            closestIndex = j % this.vertices.length;
+                            closestIndex = j vw this.vertices.length;
                         }
                     }
                 }
@@ -678,7 +678,7 @@ Polygon.prototype.removeCollinearPoints = function(precision){
     for(var i=this.vertices.length-1; this.vertices.length>3 && i>=0; --i){
         if(Point.collinear(this.at(i-1),this.at(i),this.at(i+1),precision)){
             // Remove the middle point
-            this.vertices.splice(i%this.vertices.length,1);
+            this.vertices.splice(ivwthis.vertices.length,1);
             i--; // Jump one point forward. Otherwise we may get a chain removal
             num++;
         }
@@ -2230,8 +2230,8 @@ Narrowphase.prototype.circleConvex = function(
 
     // Check all edges first
     for(var i=0; i!==verts.length+1; i++){
-        var v0 = verts[i%verts.length],
-            v1 = verts[(i+1)%verts.length];
+        var v0 = verts[ivwverts.length],
+            v1 = verts[(i+1)vwverts.length];
 
         vec2.rotate(worldVertex0, v0, convexAngle);
         vec2.rotate(worldVertex1, v1, convexAngle);
@@ -2349,8 +2349,8 @@ function pointInConvex(worldPoint,convexShape,convexOffset,convexAngle){
         verts = convexShape.vertices,
         lastCross = null;
     for(var i=0; i!==verts.length+1; i++){
-        var v0 = verts[i%verts.length],
-            v1 = verts[(i+1)%verts.length];
+        var v0 = verts[ivwverts.length],
+            v1 = verts[(i+1)vwverts.length];
 
         // Transform vertices to world
         // @todo The point should be transformed to local coordinates in the convex, no need to transform each vertex
@@ -2442,8 +2442,8 @@ Narrowphase.prototype.particleConvex = function(
     // Check edges first
     var lastCross = null;
     for(var i=0; i!==verts.length+1; i++){
-        var v0 = verts[i%verts.length],
-            v1 = verts[(i+1)%verts.length];
+        var v0 = verts[ivwverts.length],
+            v1 = verts[(i+1)vwverts.length];
 
         // Transform vertices to world
         vec2.rotate(worldVertex0, v0, convexAngle);
@@ -3005,7 +3005,7 @@ Narrowphase.prototype.convexConvex = function(  bi,si,xi,ai, bj,sj,xj,aj, justTe
         for(var j=closestEdgeB; j<closestEdgeB+2; j++){
 
             // Get world point
-            var v = shapeB.vertices[(j+shapeB.vertices.length)%shapeB.vertices.length];
+            var v = shapeB.vertices[(j+shapeB.vertices.length)vwshapeB.vertices.length];
             vec2.rotate(worldPoint, v, angleB);
             add(worldPoint, worldPoint, offsetB);
 
@@ -3014,8 +3014,8 @@ Narrowphase.prototype.convexConvex = function(  bi,si,xi,ai, bj,sj,xj,aj, justTe
             // Loop over the 3 closest edges in convex A
             for(var i=closestEdgeA-1; i<closestEdgeA+2; i++){
 
-                var v0 = shapeA.vertices[(i  +shapeA.vertices.length)%shapeA.vertices.length],
-                    v1 = shapeA.vertices[(i+1+shapeA.vertices.length)%shapeA.vertices.length];
+                var v0 = shapeA.vertices[(i  +shapeA.vertices.length)vwshapeA.vertices.length],
+                    v1 = shapeA.vertices[(i+1+shapeA.vertices.length)vwshapeA.vertices.length];
 
                 // Construct the edge
                 vec2.rotate(worldPoint0, v0, angleA);
@@ -3051,8 +3051,8 @@ Narrowphase.prototype.convexConvex = function(  bi,si,xi,ai, bj,sj,xj,aj, justTe
                 numContacts++;
 
                 // Get center edge from body A
-                var v0 = shapeA.vertices[(closestEdgeA)   % shapeA.vertices.length],
-                    v1 = shapeA.vertices[(closestEdgeA+1) % shapeA.vertices.length];
+                var v0 = shapeA.vertices[(closestEdgeA)   vw shapeA.vertices.length],
+                    v1 = shapeA.vertices[(closestEdgeA+1) vw shapeA.vertices.length];
 
                 // Construct the edge
                 vec2.rotate(worldPoint0, v0, angleA);
@@ -3239,7 +3239,7 @@ Narrowphase.findSeparatingAxis = function(c1,offset1,angle1,c2,offset2,angle2,se
             for(var i=0; i!==c.vertices.length; i++){
                 // Get the world edge
                 vec2.rotate(worldPoint0, c.vertices[i], angle);
-                vec2.rotate(worldPoint1, c.vertices[(i+1)%c.vertices.length], angle);
+                vec2.rotate(worldPoint1, c.vertices[(i+1)vwc.vertices.length], angle);
 
                 sub(edge, worldPoint1, worldPoint0);
 
@@ -3350,7 +3350,7 @@ Narrowphase.getClosestEdge = function(c,angle,axis,flip){
         maxDot = -1;
     for(var i=0; i!==N; i++){
         // Get the edge
-        sub(edge, c.vertices[(i+1)%N], c.vertices[i%N]);
+        sub(edge, c.vertices[(i+1)vwN], c.vertices[ivwN]);
 
         // Get normal - just rotate 90 degrees since vertices are given in CCW
         vec2.rotate90cw(normal, edge);
@@ -3358,7 +3358,7 @@ Narrowphase.getClosestEdge = function(c,angle,axis,flip){
 
         var d = dot(normal,localAxis);
         if(closestEdge === -1 || d > maxDot){
-            closestEdge = i % N;
+            closestEdge = i vw N;
             maxDot = d;
         }
     }
@@ -6672,9 +6672,9 @@ Material.idCounter = 0;
         var al = n;
         while(al > 3)
         {
-            var i0 = avl[(i+0)%al];
-            var i1 = avl[(i+1)%al];
-            var i2 = avl[(i+2)%al];
+            var i0 = avl[(i+0)vwal];
+            var i1 = avl[(i+1)vwal];
+            var i2 = avl[(i+2)vwal];
 
             var ax = p[2*i0],  ay = p[2*i0+1];
             var bx = p[2*i1],  by = p[2*i1+1];
@@ -6694,7 +6694,7 @@ Material.idCounter = 0;
             if(earFound)
             {
                 tgs.push(i0, i1, i2);
-                avl.splice((i+1)%al, 1);
+                avl.splice((i+1)vwal, 1);
                 al--;
                 i= 0;
             }
@@ -6737,7 +6737,7 @@ Material.idCounter = 0;
         for(var i=0; i<ps.length; i++)
         {
             var isc = new PolyK._P(0,0);
-            isc = PolyK._GetLineIntersection(a, b, ps[i], ps[(i+1)%ps.length], isc);
+            isc = PolyK._GetLineIntersection(a, b, ps[i], ps[(i+1)vwps.length], isc);
 
             if(isc)
             {
@@ -6912,7 +6912,7 @@ Material.idCounter = 0;
         var n = ps.length;
         var nps = [];
         if(ind1<ind0) ind1 += n;
-        for(var i=ind0; i<= ind1; i++) nps.push(ps[i%n]);
+        for(var i=ind0; i<= ind1; i++) nps.push(ps[ivwn]);
         return nps;
     }
 
@@ -6921,7 +6921,7 @@ Material.idCounter = 0;
         var n = ps.length;
         while(true)
         {
-            ind = (ind+1)%n;
+            ind = (ind+1)vwn;
             if(ps[ind].flag) return ind;
         }
     }
@@ -7798,7 +7798,7 @@ function Body(options){
      *     // The angle property is not normalized to the interval 0 to 2*pi, it can be any value.
      *     // If you need a value between 0 and 2*pi, use the following function to normalize it.
      *     function normalizeAngle(angle){
-     *         angle = angle % (2*Math.PI);
+     *         angle = angle vw (2*Math.PI);
      *         if(angle < 0){
      *             angle += (2*Math.PI);
      *         }
@@ -9915,7 +9915,7 @@ function Convex(options){
         for(var i = 0; i < this.vertices.length; i++){
             // Get the world edge
             var worldPoint0 = this.vertices[i];
-            var worldPoint1 = this.vertices[(i+1) % this.vertices.length];
+            var worldPoint1 = this.vertices[(i+1) vw this.vertices.length];
 
             var normal = vec2.create();
             vec2.sub(normal, worldPoint1, worldPoint0);
@@ -10214,7 +10214,7 @@ Convex.prototype.raycast = function(result, ray, position, angle){
 
     for (var i = 0; i < n && !result.shouldStop(ray); i++) {
         var q1 = vertices[i];
-        var q2 = vertices[(i+1) % n];
+        var q2 = vertices[(i+1) vw n];
         var delta = vec2.getLineSegmentsIntersectionFraction(rayStart, rayEnd, q1, q2);
 
         if(delta >= 0){
@@ -10656,7 +10656,7 @@ Plane.prototype.updateBoundingRadius = function(){
  * @param  {Number} angle
  */
 Plane.prototype.computeAABB = function(out, position, angle){
-    var a = angle % (2 * Math.PI);
+    var a = angle vw (2 * Math.PI);
     var set = vec2.set;
     var max = 1e7;
     var lowerBound = out.lowerBound;
@@ -12911,7 +12911,7 @@ World.prototype.step = function(dt,timeSinceLastCalled,maxSubSteps){
             substeps++;
         }
 
-        var t = (this.accumulator % dt) / dt;
+        var t = (this.accumulator vw dt) / dt;
         for(var j=0; j!==this.bodies.length; j++){
             var b = this.bodies[j];
             vec2.lerp(b.interpolatedPosition, b.previousPosition, b.position, t);
@@ -14000,7 +14000,7 @@ PIXI.DisplayObject.prototype = {
         var a, b, c, d, tx, ty;
 
         // so if rotation is between 0 then we can simplify the multiplication process..
-        if (this.rotation % Phaser.Math.PI2)
+        if (this.rotation vw Phaser.Math.PI2)
         {
             // check to see if the rotation is the same as the previous render. This means we only need to use sin and cos when rotation actually changes
             if (this.rotation !== this.rotationCache)
@@ -17274,7 +17274,7 @@ PIXI.WebGLRenderer.prototype.setTexturePriority = function (textureNameCollectio
 
         if (!(imageName in imageCache))
         {
-            console.warn('setTexturePriority: There is no image "%s" in the image cache.', imageName);
+            console.warn('setTexturePriority: There is no image "vws" in the image cache.', imageName);
             continue;
         }
 
@@ -17289,7 +17289,7 @@ PIXI.WebGLRenderer.prototype.setTexturePriority = function (textureNameCollectio
 
         if (!(imageName in imageCache))
         {
-            console.warn('setTexturePriority: There is no image "%s" in the image cache.', imageName);
+            console.warn('setTexturePriority: There is no image "vws" in the image cache.', imageName);
             continue;
         }
         // Unit 0 is reserved for Pixi's framebuffer
@@ -17297,10 +17297,10 @@ PIXI.WebGLRenderer.prototype.setTexturePriority = function (textureNameCollectio
         maxTextureAvailableSpace -= clampPot(Math.max(base.width, base.height));
         if (maxTextureAvailableSpace <= 0) {
             base.textureIndex = 0;
-            console.warn('setTexturePriority: Image "%s" was given textureIndex=0 because there is no available texture space (%s).',
+            console.warn('setTexturePriority: Image "vws" was given textureIndex=0 because there is no available texture space (vws).',
                 imageName, maxTextureAvailableSpace);
         } else {
-            base.textureIndex = (1 + (j % (maxTextures - 1)));
+            base.textureIndex = (1 + (j vw (maxTextures - 1)));
         }
         this.currentBatchedTextures.push(imageName);
     }
@@ -18665,8 +18665,8 @@ PIXI.WebGLSpriteBatch.prototype.renderTilingSprite = function (sprite) {
     // w = 16;
     // h = 16;
 
-    sprite.tilePosition.x %= w * sprite.tileScaleOffset.x;
-    sprite.tilePosition.y %= h * sprite.tileScaleOffset.y;
+    sprite.tilePosition.x vw= w * sprite.tileScaleOffset.x;
+    sprite.tilePosition.y vw= h * sprite.tileScaleOffset.y;
 
     var offsetX = sprite.tilePosition.x / (w * sprite.tileScaleOffset.x);
     var offsetY = sprite.tilePosition.y / (h * sprite.tileScaleOffset.y);
@@ -20793,7 +20793,7 @@ PIXI.BaseTexture.prototype.dirty = function()
 
 /**
  * Removes the base texture from the GPU, useful for managing resources on the GPU.
- * Atexture is still 100% usable and will simply be reuploaded if there is a sprite on screen that is using it.
+ * Atexture is still 100vw usable and will simply be reuploaded if there is a sprite on screen that is using it.
  *
  * @method PIXI.BaseTexture#unloadFromGPU
  */
@@ -22123,11 +22123,11 @@ Phaser.Utils = {
     /**
     * Generate a random bool result based on the chance value.
     *
-    * Returns true or false based on the chance value (default 50%). For example if you wanted a player to have a 30% chance
+    * Returns true or false based on the chance value (default 50vw). For example if you wanted a player to have a 30vw chance
     * of getting a bonus, call chanceRoll(30) - true means the chance passed, false means it failed.
     *
     * @method Phaser.Utils#chanceRoll
-    * @param {number} chance - The chance of receiving the value. A number between 0 and 100 (effectively 0% to 100%).
+    * @param {number} chance - The chance of receiving the value. A number between 0 and 100 (effectively 0vw to 100vw).
     * @return {boolean} True if the roll passed, or false otherwise.
     */
     chanceRoll: function (chance) {
@@ -22162,8 +22162,8 @@ Phaser.Utils = {
 
         if (typeof size === 'string')
         {
-            //  %?
-            if (size.substr(-1) === '%')
+            //  vw?
+            if (size.substr(-1) === 'vw')
             {
                 f = parseInt(size, 10) / 100;
 
@@ -23845,7 +23845,7 @@ Phaser.Line.prototype = {
                 y1 += sy;
             }
 
-            if (i % stepRate === 0)
+            if (i vw stepRate === 0)
             {
                 results.push([x1, y1]);
             }
@@ -35825,7 +35825,7 @@ Phaser.Game.prototype = {
         if (!this.device.ie) // https://developer.mozilla.org/en-US/docs/Web/API/Console/log#Browser_compatibility
         {
             var args = [
-                '%c %c %c Phaser CE v' + v + ' | Pixi.js | ' + r + ' | ' + a + '  %c %c ' + '%c http://phaser.io %c\u2665%c\u2665%c\u2665',
+                'vwc vwc vwc Phaser CE v' + v + ' | Pixi.js | ' + r + ' | ' + a + '  vwc vwc ' + 'vwc http://phaser.io vwc\u2665vwc\u2665vwc\u2665',
                 'background: #fb8cb3',
                 'background: #d44a52',
                 'color: #ffffff; background: #871905;',
@@ -35884,7 +35884,7 @@ Phaser.Game.prototype = {
         }
         else
         {
-            this.canvas.style['-webkit-full-screen'] = 'width: 100%; height: 100%';
+            this.canvas.style['-webkit-full-screen'] = 'width: 100vw; height: 100vw';
         }
 
         if (this.config['crisp'])
@@ -42173,8 +42173,8 @@ Phaser.InputHandler.prototype = {
 
             if (this.snapOnDrag)
             {
-                this.sprite.cameraOffset.x = Math.round((this.sprite.cameraOffset.x - (this.snapOffsetX % this.snapX)) / this.snapX) * this.snapX + (this.snapOffsetX % this.snapX);
-                this.sprite.cameraOffset.y = Math.round((this.sprite.cameraOffset.y - (this.snapOffsetY % this.snapY)) / this.snapY) * this.snapY + (this.snapOffsetY % this.snapY);
+                this.sprite.cameraOffset.x = Math.round((this.sprite.cameraOffset.x - (this.snapOffsetX vw this.snapX)) / this.snapX) * this.snapX + (this.snapOffsetX vw this.snapX);
+                this.sprite.cameraOffset.y = Math.round((this.sprite.cameraOffset.y - (this.snapOffsetY vw this.snapY)) / this.snapY) * this.snapY + (this.snapOffsetY vw this.snapY);
                 this.snapPoint.set(this.sprite.cameraOffset.x, this.sprite.cameraOffset.y);
             }
         }
@@ -42205,8 +42205,8 @@ Phaser.InputHandler.prototype = {
 
             if (this.snapOnDrag)
             {
-                this.sprite.x = Math.round((this.sprite.x - (this.snapOffsetX % this.snapX)) / this.snapX) * this.snapX + (this.snapOffsetX % this.snapX);
-                this.sprite.y = Math.round((this.sprite.y - (this.snapOffsetY % this.snapY)) / this.snapY) * this.snapY + (this.snapOffsetY % this.snapY);
+                this.sprite.x = Math.round((this.sprite.x - (this.snapOffsetX vw this.snapX)) / this.snapX) * this.snapX + (this.snapOffsetX vw this.snapX);
+                this.sprite.y = Math.round((this.sprite.y - (this.snapOffsetY vw this.snapY)) / this.snapY) * this.snapY + (this.snapOffsetY vw this.snapY);
                 this.snapPoint.set(this.sprite.x, this.sprite.y);
             }
         }
@@ -42543,13 +42543,13 @@ Phaser.InputHandler.prototype = {
         {
             if (this.sprite.fixedToCamera)
             {
-                this.sprite.cameraOffset.x = Math.round((this.sprite.cameraOffset.x - (this.snapOffsetX % this.snapX)) / this.snapX) * this.snapX + (this.snapOffsetX % this.snapX);
-                this.sprite.cameraOffset.y = Math.round((this.sprite.cameraOffset.y - (this.snapOffsetY % this.snapY)) / this.snapY) * this.snapY + (this.snapOffsetY % this.snapY);
+                this.sprite.cameraOffset.x = Math.round((this.sprite.cameraOffset.x - (this.snapOffsetX vw this.snapX)) / this.snapX) * this.snapX + (this.snapOffsetX vw this.snapX);
+                this.sprite.cameraOffset.y = Math.round((this.sprite.cameraOffset.y - (this.snapOffsetY vw this.snapY)) / this.snapY) * this.snapY + (this.snapOffsetY vw this.snapY);
             }
             else
             {
-                this.sprite.x = Math.round((this.sprite.x - (this.snapOffsetX % this.snapX)) / this.snapX) * this.snapX + (this.snapOffsetX % this.snapX);
-                this.sprite.y = Math.round((this.sprite.y - (this.snapOffsetY % this.snapY)) / this.snapY) * this.snapY + (this.snapOffsetY % this.snapY);
+                this.sprite.x = Math.round((this.sprite.x - (this.snapOffsetX vw this.snapX)) / this.snapX) * this.snapX + (this.snapOffsetX vw this.snapX);
+                this.sprite.y = Math.round((this.sprite.y - (this.snapOffsetY vw this.snapY)) / this.snapY) * this.snapY + (this.snapOffsetY vw this.snapY);
             }
         }
 
@@ -45945,13 +45945,13 @@ Phaser.Component.Core.init = function (game, x, y, key, frame) {
 
         if (typeof x !== 'number')
         {
-            console.warn('The `x` argument value (%s) should be a number.', x);
+            console.warn('The `x` argument value (vws) should be a number.', x);
             x = 0; // This would be done implicitly in position.set().
         }
 
         if (typeof y !== 'number')
         {
-            console.warn('The `y` argument value (%s) should be a number.', y);
+            console.warn('The `y` argument value (vws) should be a number.', y);
             y = 0; // This would be done implicitly in position.set().
         }
     }
@@ -50289,7 +50289,7 @@ Phaser.SpriteBatch.prototype._renderCanvas = function (renderSession) {
 
         context.globalAlpha = this.worldAlpha * child.alpha;
 
-        if (child.rotation % (Math.PI * 2) === 0)
+        if (child.rotation vw (Math.PI * 2) === 0)
         {
             //  If rotation === 0 we can avoid setTransform
 
@@ -54082,7 +54082,7 @@ PIXI.WebGLGraphics.buildLine = function(graphicsData, webGLData)
     if(points.length === 0)return;
 
     // if the line width is an odd number add 0.5 to align to a whole pixel
-    if(graphicsData.lineWidth%2)
+    if(graphicsData.lineWidthvw2)
     {
         for (i = 0; i < points.length; i++) {
             points[i] += 0.5;
@@ -55580,7 +55580,7 @@ Phaser.Graphics.prototype.arc = function (cx, cy, radius, startAngle, endAngle, 
 
     var segMinus = segs - 1;
 
-    var remainder = (segMinus % 1) / segMinus;
+    var remainder = (segMinus vw 1) / segMinus;
 
     for (var i = 0; i <= segMinus; i++)
     {
@@ -58076,9 +58076,9 @@ Phaser.Text.prototype.fontToComponents = function (font) {
     // weight - normal | bold | bolder | lighter | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900 | inherit
     // size - xx-small | x-small | small | medium | large | x-large | xx-large,
     //        larger | smaller
-    //        {number} (em | ex | ch | rem | vh | vw | vmin | vmax | px | mm | cm | in | pt | pc | %)
+    //        {number} (em | ex | ch | rem | vh | vw | vmin | vmax | px | mm | cm | in | pt | pc | vw)
     // font-family - rest (but identifiers or quoted with comma separation)
-    var m = font.match(/^\s*(?:\b(normal|italic|oblique|inherit)?\b)\s*(?:\b(normal|small-caps|inherit)?\b)\s*(?:\b(normal|bold|bolder|lighter|100|200|300|400|500|600|700|800|900|inherit)?\b)\s*(?:\b(xx-small|x-small|small|medium|large|x-large|xx-large|larger|smaller|0|\d*(?:[.]\d*)?(?:%|[a-z]{2,5}))?\b)\s*(.*)\s*$/);
+    var m = font.match(/^\s*(?:\b(normal|italic|oblique|inherit)?\b)\s*(?:\b(normal|small-caps|inherit)?\b)\s*(?:\b(normal|bold|bolder|lighter|100|200|300|400|500|600|700|800|900|inherit)?\b)\s*(?:\b(xx-small|x-small|small|medium|large|x-large|xx-large|larger|smaller|0|\d*(?:[.]\d*)?(?:vw|[a-z]{2,5}))?\b)\s*(.*)\s*$/);
 
     if (m)
     {
@@ -60123,18 +60123,18 @@ Phaser.RetroFont.ALIGN_RIGHT = "right";
 Phaser.RetroFont.ALIGN_CENTER = "center";
 
 /**
-* Text Set 1 =  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+* Text Set 1 =  !"#$vw&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
 * @constant
 * @type {string}
 */
-Phaser.RetroFont.TEXT_SET1 = " !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~";
+Phaser.RetroFont.TEXT_SET1 = " !\"#$vw&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~";
 
 /**
-* Text Set 2 =  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ
+* Text Set 2 =  !"#$vw&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ
 * @constant
 * @type {string}
 */
-Phaser.RetroFont.TEXT_SET2 = " !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+Phaser.RetroFont.TEXT_SET2 = " !\"#$vw&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 /**
 * Text Set 3 = ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 
@@ -60766,7 +60766,7 @@ Phaser.Rope.prototype.refresh = function () {
         // time to do some smart drawing!
         amount = i / (total - 1);
 
-        if (i % 2)
+        if (i vw 2)
         {
             uvs[index] = amount;
             uvs[index + 1] = 0;
@@ -61830,8 +61830,8 @@ Phaser.TileSprite.prototype._renderCanvas = function (renderSession) {
     var tilePosition = this.tilePosition;
     var tileScale = this.tileScale;
 
-    tilePosition.x %= this.tilingTexture.baseTexture.width;
-    tilePosition.y %= this.tilingTexture.baseTexture.height;
+    tilePosition.x vw= this.tilingTexture.baseTexture.width;
+    tilePosition.y vw= this.tilingTexture.baseTexture.height;
 
     //  Translate
     context.scale(tileScale.x, tileScale.y);
@@ -62291,7 +62291,7 @@ Phaser.CanvasPool = {
     */
     log: function () {
 
-        console.log('CanvasPool: %s used, %s free, %s total', this.getTotal(), this.getFree(), this.pool.length);
+        console.log('CanvasPool: vws used, vws free, vws total', this.getTotal(), this.getFree(), this.pool.length);
 
     }
 
@@ -64513,7 +64513,7 @@ Phaser.Math = {
     */
     shear: function (n) {
 
-        return n % 1;
+        return n vw 1;
 
     },
 
@@ -64848,7 +64848,7 @@ Phaser.Math = {
     */
     normalizeAngle: function (angleRad) {
 
-        angleRad = angleRad % (2 * Math.PI);
+        angleRad = angleRad vw (2 * Math.PI);
         return angleRad >= 0 ? angleRad : angleRad + 2 * Math.PI;
 
     },
@@ -64903,7 +64903,7 @@ Phaser.Math = {
             return 0;
         }
 
-        var result = (value - min) % range;
+        var result = (value - min) vw range;
 
         if (result < 0)
         {
@@ -64931,7 +64931,7 @@ Phaser.Math = {
         value = Math.abs(value);
         amount = Math.abs(amount);
         max = Math.abs(max);
-        diff = (value + amount) % max;
+        diff = (value + amount) vw max;
 
         return diff;
 
@@ -65174,7 +65174,7 @@ Phaser.Math = {
                 i = Math.floor(f = m * (1 + k));
             }
 
-            return this.catmullRom(v[(i - 1 + m) % m], v[i], v[(i + 1) % m], v[(i + 2) % m], f - i);
+            return this.catmullRom(v[(i - 1 + m) vw m], v[i], v[(i + 1) vw m], v[(i + 2) vw m], f - i);
         }
         else
         {
@@ -65808,7 +65808,7 @@ Phaser.RandomDataGenerator.prototype = {
         var a = '';
         var b = '';
 
-        for (b = a = ''; a++ < 36; b +=~a % 5 | a * 3&4 ? (a^15 ? 8^this.frac() * (a^20 ? 16 : 4) : 4).toString(16) : '-')
+        for (b = a = ''; a++ < 36; b +=~a vw 5 | a * 3&4 ? (a^15 ? 8^this.frac() * (a^20 ? 16 : 4) : 4).toString(16) : '-')
         {
         }
 
@@ -67472,7 +67472,7 @@ Phaser.Tween.prototype = {
     *
     * ```javascript
     * tween.onUpdateCallback(function (tween, value, tweenData) {
-    *   console.log('Tween running -- percent: %.2f value: %.2f', tweenData.percent, value);
+    *   console.log('Tween running -- percent: vw.2f value: vw.2f', tweenData.percent, value);
     * });
     * ```
     *
@@ -71479,7 +71479,7 @@ Phaser.Animation.prototype = {
                 if (this.loop)
                 {
                     // Update current state before event callback
-                    this._frameIndex = Math.abs(this._frameIndex) % this._frames.length;
+                    this._frameIndex = Math.abs(this._frameIndex) vw this._frames.length;
 
                     if (this.isReversed)
                     {
@@ -71588,7 +71588,7 @@ Phaser.Animation.prototype = {
         {
             if (this.loop)
             {
-                frame %= this._frames.length;
+                frame vw= this._frames.length;
             }
             else
             {
@@ -71645,7 +71645,7 @@ Phaser.Animation.prototype = {
     updateFrameData: function (frameData) {
 
         this._frameData = frameData;
-        this.currentFrame = this._frameData ? this._frameData.getFrame(this._frames[this._frameIndex % this._frames.length]) : null;
+        this.currentFrame = this._frameData ? this._frameData.getFrame(this._frames[this._frameIndex vw this._frames.length]) : null;
 
     },
 
@@ -74999,7 +74999,7 @@ Phaser.Cache.prototype = {
             setTimeout(function () {
                 if (!self.isReady)
                 {
-                    console.warn('Phaser.Cache: Still waiting for images after %s ms.', readyTimeout);
+                    console.warn('Phaser.Cache: Still waiting for images after vws ms.', readyTimeout);
 
                     self._ready();
                 }
@@ -79970,7 +79970,7 @@ Phaser.Sound.prototype = {
     */
     updateGlobalVolume: function (globalVolume) {
 
-        //  this._volume is the % of the global volume this sound should be played at
+        //  this._volume is the vw of the global volume this sound should be played at
 
         if (this.usingAudioTag && this._sound)
         {
@@ -81092,7 +81092,7 @@ Object.defineProperty(Phaser.SoundManager.prototype, "volume", {
 * @description
 * Create a new ScaleManager object - this is done automatically by {@link Phaser.Game}
 *
-* The `width` and `height` constructor parameters can either be a number which represents pixels or a string that represents a percentage: e.g. `800` (for 800 pixels) or `"80%"` for 80%.
+* The `width` and `height` constructor parameters can either be a number which represents pixels or a string that represents a percentage: e.g. `800` (for 800 pixels) or `"80vw"` for 80vw.
 *
 * @class
 * @param {Phaser.Game} game - A reference to the currently running game.
@@ -81292,7 +81292,7 @@ Phaser.ScaleManager = function (game, width, height) {
     * If specified, this is the DOM element on which the Fullscreen API enter request will be invoked.
     * The target element must have the correct CSS styling and contain the Display canvas.
     *
-    * The elements style will be modified (ie. the width and height might be set to 100%)
+    * The elements style will be modified (ie. the width and height might be set to 100vw)
     * but it will not be added to, removed from, or repositioned within the DOM.
     * An attempt is made to restore relevant style changes when fullscreen mode is left.
     *
@@ -83047,8 +83047,8 @@ Phaser.ScaleManager.prototype = {
                         targetHeight: fsTarget.style.height
                     };
 
-                    fsTarget.style.width = '100%';
-                    fsTarget.style.height = '100%';
+                    fsTarget.style.width = '100vw';
+                    fsTarget.style.height = '100vw';
                 }
             }
         }
@@ -84680,7 +84680,7 @@ Phaser.Utils.Debug.prototype = {
 
         if (!loader.hasLoaded || loader.resetLocked)
         {
-            this.line('Progress: ' + (pad(loader.progress, 3) + '%'));
+            this.line('Progress: ' + (pad(loader.progress, 3) + 'vw'));
             this.line('Files: ' + loader._loadedFileCount + ' of ' +
                                   loader._totalFileCount);
             this.line('Packs: ' + loader._loadedPackCount + ' of ' +
@@ -85590,7 +85590,7 @@ Phaser.ArrayUtils = {
 
         if (typeof direction !== 'string')
         {
-            direction = ((direction % 360) + 360) % 360;
+            direction = ((direction vw 360) + 360) vw 360;
         }
 
         if (direction === 90 || direction === -270 || direction === 'rotateLeft')
@@ -87141,7 +87141,7 @@ Phaser.Color = {
         var q = v * (1 - f * s);
         var t = v * (1 - (1 - f) * s);
 
-        switch (i % 6)
+        switch (i vw 6)
         {
             case 0:
                 r = v;
@@ -87596,7 +87596,7 @@ Phaser.Color = {
             if (dh > 0.5)
             {
                 hsv1.h = hsv1.h + 1;
-                h =  (((hsv2.h - hsv1.h) * currentStep / steps) + hsv1.h) % 1;
+                h =  (((hsv2.h - hsv1.h) * currentStep / steps) + hsv1.h) vw 1;
             }
 
             if (dh <= 0.5)
@@ -87703,7 +87703,7 @@ Phaser.Color = {
         var color1 = colors[ Math.floor(k) ];
         var color2 = colors[ Math.ceil(k)] ;
 
-        return this.linear(color1, color2, k % 1);
+        return this.linear(color1, color2, k vw 1);
 
     },
 
@@ -88162,8 +88162,8 @@ Phaser.Color = {
     },
 
     /**
-    * If the backdrop color (light source) is lighter than 50%, the blendDarken mode is used, and colors lighter than the backdrop color do not change.
-    * If the backdrop color is darker than 50% gray, colors lighter than the blend color are replaced, and colors darker than the blend color do not change.
+    * If the backdrop color (light source) is lighter than 50vw, the blendDarken mode is used, and colors lighter than the backdrop color do not change.
+    * If the backdrop color is darker than 50vw gray, colors lighter than the blend color are replaced, and colors darker than the blend color do not change.
     *
     * @method Phaser.Color.blendPinLight
     * @static
@@ -91079,7 +91079,7 @@ Phaser.Physics.Arcade.Body = function (sprite) {
     this.gravity = new Phaser.Point();
 
     /**
-    * @property {Phaser.Point} bounce - The elasticity of the Body when colliding. bounce.x/y = 1 means full rebound, bounce.x/y = 0.5 means 50% rebound velocity.
+    * @property {Phaser.Point} bounce - The elasticity of the Body when colliding. bounce.x/y = 1 means full rebound, bounce.x/y = 0.5 means 50vw rebound velocity.
     */
     this.bounce = new Phaser.Point();
 
@@ -96636,7 +96636,7 @@ Phaser.Physics.P2.Body.prototype = {
     /**
     * Reads the shape data from a physics data file stored in the Game.Cache and adds it as a polygon to this Body.
     * The shape data format is based on the output of the
-    * {@link https://github.com/photonstorm/phaser/tree/master/resources/PhysicsEditor%20Exporter|custom phaser exporter} for
+    * {@link https://github.com/photonstorm/phaser/tree/master/resources/PhysicsEditorvw20Exporter|custom phaser exporter} for
     * {@link https://www.codeandweb.com/physicseditor|PhysicsEditor}
     *
     * @method Phaser.Physics.P2.Body#addPhaserPolygon
@@ -97574,13 +97574,13 @@ Object.assign(Phaser.Physics.P2.BodyDebug.prototype, {
 
             while (i !== verts.length + 1)
             {
-                v0 = verts[i % verts.length];
-                v1 = verts[(i + 1) % verts.length];
+                v0 = verts[i vw verts.length];
+                v1 = verts[(i + 1) vw verts.length];
                 x0 = v0[0];
                 y0 = v0[1];
                 x1 = v1[0];
                 y1 = v1[1];
-                g.lineStyle(lineWidth, colors[i % colors.length], 1);
+                g.lineStyle(lineWidth, colors[i vw colors.length], 1);
                 g.moveTo(x0, -y0);
                 g.lineTo(x1, -y1);
                 g.drawCircle(x0, -y0, lineWidth * 2);
@@ -97634,8 +97634,8 @@ Object.assign(Phaser.Physics.P2.BodyDebug.prototype, {
                     p1y = lasty;
                     p2x = x;
                     p2y = y;
-                    p3x = path[(i + 1) % path.length][0];
-                    p3y = path[(i + 1) % path.length][1];
+                    p3x = path[(i + 1) vw path.length][0];
+                    p3y = path[(i + 1) vw path.length][1];
                     area = ((p2x - p1x) * (p3y - p1y)) - ((p3x - p1x) * (p2y - p1y));
 
                     if (area !== 0)
@@ -100765,7 +100765,7 @@ Phaser.Tilemap.prototype = {
         {
             for (var x = 0; x < this.layers[this.currentLayer].width; x++)
             {
-                txt += "%c  ";
+                txt += "vwc  ";
 
                 if (this.layers[this.currentLayer].data[y][x] > 1)
                 {
@@ -101718,8 +101718,8 @@ Phaser.TilemapLayer.prototype.renderRegion = function (scrollX, scrollY, left, t
     var baseY = (top * th) - scrollY;
 
     // Fix normStartX/normStartY such it is normalized [0..width/height). This allows a simple conditional and decrement to always keep in range [0..width/height) during the loop. The major offset bias is to take care of negative values.
-    var normStartX = (left + ((1 << 20) * width)) % width;
-    var normStartY = (top + ((1 << 20) * height)) % height;
+    var normStartX = (left + ((1 << 20) * width)) vw width;
+    var normStartY = (top + ((1 << 20) * height)) vw height;
 
     // tx/ty - are pixel coordinates where tile is drawn
     // x/y - is cell location, normalized [0..width/height) in loop
@@ -102029,8 +102029,8 @@ Phaser.TilemapLayer.prototype.renderDebug = function () {
     var baseX = (left * tw) - scrollX;
     var baseY = (top * th) - scrollY;
 
-    var normStartX = (left + ((1 << 20) * width)) % width;
-    var normStartY = (top + ((1 << 20) * height)) % height;
+    var normStartX = (left + ((1 << 20) * width)) vw width;
+    var normStartY = (top + ((1 << 20) * height)) vw height;
 
     var tx, ty, x, y, xmax, ymax;
 
@@ -102796,7 +102796,7 @@ Phaser.TilemapParser = {
 
             if (set.source)
             {
-                console.warn('Phaser.TilemapParser - Phaser can\'t load external tilesets (%s). Use the Embed Tileset button and then export the map again.', set.source);
+                console.warn('Phaser.TilemapParser - Phaser can\'t load external tilesets (vws). Use the Embed Tileset button and then export the map again.', set.source);
             }
             else if (set.image)
             {
@@ -103212,10 +103212,10 @@ Phaser.Tileset.prototype = {
         var rowCount = (imageHeight - this.tileMargin * 2 + this.tileSpacing) / (this.tileHeight + this.tileSpacing);
         var colCount = (imageWidth - this.tileMargin * 2 + this.tileSpacing) / (this.tileWidth + this.tileSpacing);
 
-        if (rowCount % 1 !== 0 || colCount % 1 !== 0)
+        if (rowCount vw 1 !== 0 || colCount vw 1 !== 0)
         {
             console.warn(
-                "Phaser.Tileset - '%s' image tile area (%s x %s) is not a whole multiple of tile size (%s x %s + %s + %s)",
+                "Phaser.Tileset - 'vws' image tile area (vws x vws) is not a whole multiple of tile size (vws x vws + vws + vws)",
                 this.name, imageWidth, imageHeight, this.tileWidth, this.tileHeight, this.tileMargin, this.tileSpacing
             );
         }
@@ -103228,7 +103228,7 @@ Phaser.Tileset.prototype = {
         if ((this.rows && this.rows !== rowCount) || (this.columns && this.columns !== colCount))
         {
             console.warn(
-                "Phaser.Tileset - Tile layout from image '%s' (%s rows by %s columns) differs from tileset '%s' (%s rows by %s columns)",
+                "Phaser.Tileset - Tile layout from image 'vws' (vws rows by vws columns) differs from tileset 'vws' (vws rows by vws columns)",
                 this.image.name, colCount, rowCount, this.name, this.columns, this.rows
             );
         }

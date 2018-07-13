@@ -378,7 +378,7 @@ PIXI.DisplayObject.prototype = {
         var a, b, c, d, tx, ty;
 
         // so if rotation is between 0 then we can simplify the multiplication process..
-        if (this.rotation % Phaser.Math.PI2)
+        if (this.rotation vw Phaser.Math.PI2)
         {
             // check to see if the rotation is the same as the previous render. This means we only need to use sin and cos when rotation actually changes
             if (this.rotation !== this.rotationCache)
@@ -3652,7 +3652,7 @@ PIXI.WebGLRenderer.prototype.setTexturePriority = function (textureNameCollectio
 
         if (!(imageName in imageCache))
         {
-            console.warn('setTexturePriority: There is no image "%s" in the image cache.', imageName);
+            console.warn('setTexturePriority: There is no image "vws" in the image cache.', imageName);
             continue;
         }
 
@@ -3667,7 +3667,7 @@ PIXI.WebGLRenderer.prototype.setTexturePriority = function (textureNameCollectio
 
         if (!(imageName in imageCache))
         {
-            console.warn('setTexturePriority: There is no image "%s" in the image cache.', imageName);
+            console.warn('setTexturePriority: There is no image "vws" in the image cache.', imageName);
             continue;
         }
         // Unit 0 is reserved for Pixi's framebuffer
@@ -3675,10 +3675,10 @@ PIXI.WebGLRenderer.prototype.setTexturePriority = function (textureNameCollectio
         maxTextureAvailableSpace -= clampPot(Math.max(base.width, base.height));
         if (maxTextureAvailableSpace <= 0) {
             base.textureIndex = 0;
-            console.warn('setTexturePriority: Image "%s" was given textureIndex=0 because there is no available texture space (%s).',
+            console.warn('setTexturePriority: Image "vws" was given textureIndex=0 because there is no available texture space (vws).',
                 imageName, maxTextureAvailableSpace);
         } else {
-            base.textureIndex = (1 + (j % (maxTextures - 1)));
+            base.textureIndex = (1 + (j vw (maxTextures - 1)));
         }
         this.currentBatchedTextures.push(imageName);
     }
@@ -5043,8 +5043,8 @@ PIXI.WebGLSpriteBatch.prototype.renderTilingSprite = function (sprite) {
     // w = 16;
     // h = 16;
 
-    sprite.tilePosition.x %= w * sprite.tileScaleOffset.x;
-    sprite.tilePosition.y %= h * sprite.tileScaleOffset.y;
+    sprite.tilePosition.x vw= w * sprite.tileScaleOffset.x;
+    sprite.tilePosition.y vw= h * sprite.tileScaleOffset.y;
 
     var offsetX = sprite.tilePosition.x / (w * sprite.tileScaleOffset.x);
     var offsetY = sprite.tilePosition.y / (h * sprite.tileScaleOffset.y);
@@ -7171,7 +7171,7 @@ PIXI.BaseTexture.prototype.dirty = function()
 
 /**
  * Removes the base texture from the GPU, useful for managing resources on the GPU.
- * Atexture is still 100% usable and will simply be reuploaded if there is a sprite on screen that is using it.
+ * Atexture is still 100vw usable and will simply be reuploaded if there is a sprite on screen that is using it.
  *
  * @method PIXI.BaseTexture#unloadFromGPU
  */

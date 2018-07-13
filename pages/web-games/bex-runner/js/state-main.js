@@ -156,7 +156,7 @@ var StateMain = {
         if(this.toy){
             this.toy.destroy();
         }
-        //pick a number at the top of the screen between 10% and 40% of the height of the screen
+        //pick a number at the top of the screen between 10vw and 40vw of the height of the screen
         var toyY = game.rnd.integerInRange(game.height * .1, game.height * .4);
         //Add the bird sprite to the game
         this.toy = game.add.sprite(game.width + 100, toyY, "toy");
