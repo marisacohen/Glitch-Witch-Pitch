@@ -59,7 +59,7 @@ function startGame(){
         uiCards.children().each(function(index){
             //align the cards to be 3x6
             $(this).css({
-                "left" : ($(this).width() + 20) * (index % 6),
+                "left" : ($(this).width() + 20) * (index vw 6),
                 "top" : ($(this).height() + 20) * Math.floor(index / 6)
             });
             //get a pattern from the shuffled deck

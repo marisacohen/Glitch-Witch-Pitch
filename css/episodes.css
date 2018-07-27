@@ -1,156 +1,143 @@
-/*Color Pattern for Episode Divs*/
-/*purple: #845aa2
-pink: #ec5288
-green: #7bcba4
-yellow: #e6bd6e
-blue: #2d46a2
-grey: #354656
-red: #e75a49*/
-
-body{
-    background-color: #0d0e10;
-    font-family: 'Mina', sans-serif;
-    font-size: 100%;
+body {
+    overflow-x: hidden;
+    height: 150vh;
 }
-
-body, h1, h2, h3, h4, h5, h6 {
-  font-size-adjust: 0.5;
-}
-
-.episode{
-    width: 1500px;
-    height: 550px;
-    margin: 0 auto;
-    color: black;
-    font-size: 1em;
-  /* equivalent to 16px */
-  line-height: 1.375;
-  /* equivalent to 20px */
-}
-
-.story{
-    display: block;
+/*Left Screen*/
+.left-screen{
     float: left;
-    margin-left: 45px;
-    margin-right: 25px;
-    text-align: center;
-    width: 700px;
-    padding-top: 110px;
+    position: relative;
 }
-
-.episode-image{
-    display: block;
-    float: right;
-    margin-left: 5px;
-    margin-left: 5px;
-    width: 650px;
-}
-
-.episode-image img{
-    height: 520px;
-}
-
-#isaacMagician{
-    padding-top: 15px;
-}
-
-#first{
-    background-color: #845aa2;
-}
-
-#second{
-    background-color: #ec5288;
-}
-
-#third{
-    background-color: #7bcba4;
-}
-#fourth{
-    background-color: #e6bd6e;
-}
-#fifth{
-    background-color: #2d46a2;
-}
-
-@media (max-width:1300px){
-    .episode{
-    width: 1100px;
-    height: 575px;
-    margin: 0 auto;
-}
-    .story{
-    display: block;
-    float: left;
-    margin-left: 17px;
-    margin-right: 17px;
-    text-align: center;
-    width: 510px;
-    padding-top: 15px;
-}
-
-.episode-image{
-    display: block;
-    float: right;
-    margin-left: 5px;
-    margin-right: 5px;
-    width: 540px;
-}
-    #second .story{
-        padding-top: 65px;
-    }
-    #third .story{
-        padding-top: 75px;
-    }
-    #fourth{
-        height: 585px;
-    }
-    #fourth .story{
-        padding-top: 10px;
-    }
+#left-blue-screen{
+    z-index: 10;
+    position: absolute;
+    top:.25%;
+    left: -.05%;
+    width: 50vw;
     
-  
+}
+.left-shelf {
+    z-index: 9;
+    width: 50vw;
 }
 
-@media (max-width:772px){
-    .episode{
-    width: 650px;
-    height: 675px;
-    margin: 0 auto;
-    background-color: white;
+.left-shelf.open{
+    animation-name: slideRight;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+.left-shelf.close{
+    animation-name: slideLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+.left-text-block{
     font-size: 1em;
-    line-height: 1.25;
-}
-    .story{
-    display: block;
-    float: left;
-    margin-left: 17px;
-    margin-right: 17px;
-    text-align: center;
-    width: 290px;
-    padding-top: 50px;
+    z-index: 11;
+    position: absolute;
+    top: 20%;
+    left: 14%;
+    width: 38vw;
 }
 
-.episode-image{
-    display: block;
-    float: right;
-    margin-left: 5px;
-    /*margin-right: 5px;*/
-    width: 315px;
-}
-    .episode-image img{
-    height: 260px;
-    padding-top: 150px;
-}
-    #third .episode-image img{
-        padding-top: 125px;
-    }
+.button{
+    z-index: 12;
+    height: 11%;
+    background-image: url(../images/TempArt/Spoiler_Buttons110x84.png);
+    text-indent: -9999px;
+    display: inline-block;
     
-    /*Nav Bar*/
-.nav-links img{
-    width: 49px;
 }
-    #logo img{
-    width: 100px;
+
+.left-blue-spoiler-btn{
+    position: absolute;
+    bottom: 2%;
+    right: 8%;
+    width: 11.5%;
+    background-position: 28% 0;
 }
-   
+
+.left-blue-spoiler-btn:hover{
+    background-position: -217px -78px;
+}
+
+/*Right Screen*/
+.right-screen{
+    float: right;
+    position: relative;
+}
+#right-green-screen{
+    z-index: 10;
+    position: absolute;
+    top:.25%;
+    left: -.05%;
+    width: 50vw;
+}
+
+.right-shelf{
+    z-index: 9;
+    width: 50vw;
+}
+
+.right-shelf.open{
+    animation-name: slideLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+.right-shelf.close{
+    animation-name: slideRight;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-delay: 15s;
+    animation-fill-mode: forwards;
+}
+
+.right-text-block{
+    font-size: 1em;
+    z-index: 11;
+    position: absolute;
+    top: 20%;
+    left: 11%;
+    width: 38vw;
+}
+
+.button{
+    z-index: 12;
+    height: 11%;
+    background-image: url(../images/TempArt/Spoiler_Buttons110x84.png);
+    text-indent: -9999px;
+    display: inline-block;
+    
+}
+
+.right-green-spoiler-btn{
+    position: absolute;
+    bottom: 4%;
+    left: 8%;
+    width: 11.5%;
+    background-position: 42.5% 0;
+}
+
+.right-green-spoiler-btn:hover{
+    background-position: -330px -78px;
+}
+
+@keyframes slideRight{
+    from {transform: translateX(0);}
+    to {transform: translateX(75%);}
+}
+@keyframes slideLeft{
+    from {transform: translateX(0);}
+    to {transform: translateX(-75%);}
 }
