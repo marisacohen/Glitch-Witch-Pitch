@@ -1,14 +1,35 @@
+/*Backgrounds*/
+body{
+    background: url(../images/backgrounds/gameroombackgroundiPad.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+#game-thumbs{
+    width: 71vw;
+    height: 67vh;
+    margin: 10vh auto;
+    background-image: url(../images/backgrounds/color1f1a30transparent88.png);
+    background-size: 71vw 67vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-evenly;
+}
+
+/*Thumbnails*/
 .thumbnails{
     position: relative;
-	width: 15vw;
-    float: left;
-    margin: .25vw ;
     cursor: pointer;
+    width: 25vw;
+    height: auto;
+    margin-top: 4.5vh;
 }
 
 .thumb {
   display: block;
-  width: 100vw;
+  width: 100%;
   height: auto;
 }
 
@@ -18,8 +39,8 @@
   bottom: 0;
   left: 0;
   right: 0;
-  height: 100vw;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   opacity: 0;
   transition: .5s ease;
   background-color: #7BCBA4;
@@ -27,4 +48,28 @@
 
 .thumbnails:hover .overlay {
   opacity: .5;
+}
+
+@media(min-width:1000px){
+body{
+    background: url(../images/backgrounds/gameroombackground.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+    
+#game-thumbs{
+    width: 45vw;
+    height: 25vw;
+    margin: 15vh auto;
+    background-image: url(../images/backgrounds/color1f1a30transparent88.png);
+    background-size: 45vw 25vw;
+    justify-content: flex-start;
+}
+    
+.thumbnails{
+    width: 12vw;
+     margin: 1.5vw;
+}
+    
 }
