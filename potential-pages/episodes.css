@@ -34,7 +34,7 @@ p{
 
 img{
 	border: 0;
-	width:100%;
+	width:100vw;
 }
 
 
@@ -45,7 +45,7 @@ img{
 }
 
 .story .float-right p, .story .float-right h3{
-	width: 35%;
+	width: 35vw;
 	margin: 0 20px 0 0;
 }*/
 
@@ -55,35 +55,35 @@ img{
 }
 
 .story .float-left p, .story .float-left h3{
-	width: 35%;
+	width: 35vw;
 	margin: 0 0 0 20px;
 }
 
 #first{
-        /*background:url("../images/episodes_page/work-1.jpg") 50% 0 no-repeat fixed;*/
+        /*background:url("../images/episodes_page/work-1.jpg") 50vw 0 no-repeat fixed;*/
         background-color: #845aa2;
 		background-size: cover;
         color: black;
         height: 900px;
         margin: 0 auto;
         padding: 0;
-        width: 80%;
+        width: 80vw;
 }
 
 #first .storytime-bear{
-    background: url(../images/episodes_page/storytime-Bear.gif) 10% no-repeat fixed;
+    background: url(../images/episodes_page/storytime-Bear.gif) 10vw no-repeat fixed;
     height: 900px;
     margin: 0 auto;
     padding: 0;
     position: absolute;
     z-index: 200;
     max-width: 1800px;
-    width: 100%;
+    width: 100vw;
     overflow: hidden;
 }
 
 #second{
-        /*background: url("../images/episodes_page/secondBG-1.jpg") 50% 0 no-repeat fixed;*/
+        /*background: url("../images/episodes_page/secondBG-1.jpg") 50vw 0 no-repeat fixed;*/
         background-color: #ec5288;
 		background-size: cover;
         color: black;
@@ -91,30 +91,30 @@ img{
         margin: 0 auto;
         overflow: hidden;
         padding: 0;
-        width: 80%;
+        width: 80vw;
 }
 
 #second .bg{
-        background: url("../images/episodes_page/trainers-1.png") 50% 0 no-repeat fixed;
+        background: url("../images/episodes_page/trainers-1.png") 50vw 0 no-repeat fixed;
         height: 1300px;
         margin: 0 auto;
         padding: 0;
         position: absolute;
         z-index: 200;
         max-width: 1900px;
-		width: 80%;
+		width: 80vw;
         overflow: hidden;
 }
 
 #third{
-        /*background: url("../images/episodes_page/creative-1.jpg") 50% 0 no-repeat fixed;*/
+        /*background: url("../images/episodes_page/creative-1.jpg") 50vw 0 no-repeat fixed;*/
         background-color: #7bcba4;
 		background-size: cover;
         color: black;
         height: 650px;
         padding: 100px 0 0 0;
         margin: 0 auto;
-        width: 80%;
+        width: 80vw;
         overflow: hidden;
         
 }
@@ -123,48 +123,48 @@ img{
         margin: 0 auto;
         padding: 0px;
         float: right;
-		width: 50%;
+		width: 50vw;
         overflow: hidden;
 }
 
 #third .story .float-left{
-    width: 80%;
+    width: 80vw;
 }
 
 #fourth{
-        /*background: url("../images/episodes_page/creative-1.jpg") 50% 0 no-repeat fixed;*/
+        /*background: url("../images/episodes_page/creative-1.jpg") 50vw 0 no-repeat fixed;*/
         background-color: #e6bd6e;
 		background-size: cover;
         color: black;
         height: 750px;
         padding: 100px 0 0 0;
         margin: 0 auto;
-        width: 80%;
+        width: 80vw;
         overflow: hidden;
         padding: 0;
 }
 
 #fourth .retro-toy{
-    background: url(../images/episodes_page/Bex-90s-toy-Episode.gif) 85% 0 no-repeat fixed;
+    background: url(../images/episodes_page/Bex-90s-toy-Episode.gif) 85vw 0 no-repeat fixed;
     height: 750px;
     margin: 0 auto;
     padding: 0;
     position: absolute;
     z-index: 200;
     max-width: 1800px;
-    width: 85%;
+    width: 85vw;
     overflow: hidden;
 }
 
 #fifth{
-        /* background: url("../images/episodes_page/creative-1.jpg") 50% 0 no-repeat fixed;*/
+        /* background: url("../images/episodes_page/creative-1.jpg") 50vw 0 no-repeat fixed;*/
     background-color: #2d46a2;
 		background-size: cover;
         color: black;
         height: 750px;
         padding: 100px 0 0 0;
         margin: 0 auto;
-        width: 80%;
+        width: 80vw;
         overflow: hidden;
         padding: 0;
 }
@@ -181,9 +181,9 @@ img{
         margin: 0 auto;
         padding: 0;
         z-index: 200;
-		width: 30%;
+		width: 30vw;
         overflow: hidden;
         position: absolute;
-        bottom: %;
+        bottom: vw;
 }
 }*/
