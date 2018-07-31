@@ -136,6 +136,15 @@ body{
 .front{
     z-index: 1;
 }
+
+#social-media img{
+    width: 5vw;
+    margin: 0 2vw;
+}
+    #social-media{
+    width: 40vw;
+    margin: 0 27.75vw;
+}  
     
 }
 
@@ -158,20 +167,16 @@ body{
     #social-media{
     width: 30vw;
     margin: -4vw 35vw 0;
-}   
-
-@media(min-width:1500px){
+}  
+}
+@media(min-width:1400px){
     body{
     overflow-y: hidden;
 }
-}
-    
-@media(min-width:1600px){
-
-.head-image,.circle{
+    .head-image,.circle{
     position: absolute;
     bottom: 10vw;
-    left: 40vw;
+    left: 43vw;
     /*width: 260px;
     height: 260px;*/
     width: 15vw;
@@ -182,16 +187,37 @@ body{
     width: 3vw;
 }
     #social-media{
-    width: 21vw;
-    margin: -9vw 37vw 0;
+    width: 16vw;
+    margin: -9vw 42vw 0;
 }   
+}
+    
+@media(min-width:1600px){
+.head-image,.circle{
+    position: absolute;
+    bottom: 12vw;
+    left: 42vw;
+    /*width: 260px;
+    height: 260px;*/
+    width: 13vw;
+    height: 13vw;
+}
+    
+    #social-media img{
+    width: 2vw;
+}
+    #social-media{
+    width: 13vw;
+    margin: -11vw 42vw 0;
+}   
+
+}
     
 @media(min-width:1725px){
-
 .head-image,.circle{
     position: absolute;
     bottom: 15vw;
-    left: 43vw;
+    left: 45vw;
     /*width: 260px;
     height: 260px;*/
     width: 10vw;
@@ -200,10 +226,34 @@ body{
     
     #social-media img{
     width: 2vw;
+    margin: 0 .5vw;
 }
     #social-media{
-    width: 13vw;
-    margin: -15vw 41vw 0;
+    width: 10vw;
+    margin: -15vw 45vw 0;
 }   
-    
+
 }
+
+@media(min-width:1850px){
+.head-image,.circle{
+    position: absolute;
+    bottom: 17vw;
+    left: 46vw;
+    /*width: 260px;
+    height: 260px;*/
+    width: 8vw;
+    height: 8vw;
+}
+    
+    #social-media img{
+    width: 2vw;
+    margin: 0 .5vw;
+}
+    #social-media{
+    width: 10vw;
+    margin: -17vw 45vw 0;
+}   
+
+}
+
