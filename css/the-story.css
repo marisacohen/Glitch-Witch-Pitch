@@ -140,9 +140,6 @@ body{
 }
 
 @media(min-width:1200px){
-    body{
-    overflow-y: hidden;
-}
 
 .head-image,.circle{
     position: absolute;
