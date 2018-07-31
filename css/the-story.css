@@ -162,6 +162,12 @@ body{
     width: 30vw;
     margin: -4vw 35vw 0;
 }   
+
+@media(min-width:1500px){
+    body{
+    overflow-y: hidden;
+}
+}
     
 @media(min-width:1600px){
 
