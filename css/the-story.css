@@ -1,5 +1,6 @@
 body{
     overflow-x: hidden;
+    height: 150vh;
 }
 #banner-parallax{
 	width: 100vw;
@@ -169,9 +170,6 @@ body{
 }  
 }
 @media(min-width:1400px){
-    body{
-    overflow-y: hidden;
-}
     .head-image,.circle{
     position: absolute;
     bottom: 10vw;
