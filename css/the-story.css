@@ -111,19 +111,22 @@ body{
 
 #bex-eyes-follow{
     display: inline-block;
-    margin: 0 35vw;
-    width: 260px;
-    height: 260px;
+    /*margin: 0 35vw;*/
+    /*width: 260px;
+    height: 260px;*/
+    width: 25vw;
+    height: 25vw;
     position: relative;
 }
 
 .head-image,.circle{
     position: absolute;
     bottom: 0;
-    left: 0;
-    width: 260px;
-    height: 260px;
-    
+    left: 35vw;
+    /*width: 260px;
+    height: 260px;*/
+    width: 25vw;
+    height: 25vw;
 }
 
 .head-image{
@@ -133,5 +136,71 @@ body{
 .front{
     z-index: 1;
 }
+    
+}
+
+@media(min-width:1200px){
+    body{
+    overflow-y: hidden;
+}
+
+.head-image,.circle{
+    position: absolute;
+    bottom: 5vw;
+    left: 40vw;
+    /*width: 260px;
+    height: 260px;*/
+    width: 20vw;
+    height: 20vw;
+}
+    
+    #social-media img{
+    width: 4vw;
+    margin: 0 1vw;
+}
+    #social-media{
+    width: 30vw;
+    margin: -4vw 35vw 0;
+}   
+    
+@media(min-width:1600px){
+
+.head-image,.circle{
+    position: absolute;
+    bottom: 10vw;
+    left: 40vw;
+    /*width: 260px;
+    height: 260px;*/
+    width: 15vw;
+    height: 15vw;
+}
+    
+    #social-media img{
+    width: 3vw;
+}
+    #social-media{
+    width: 21vw;
+    margin: -9vw 37vw 0;
+}   
+    
+@media(min-width:1800px){
+
+.head-image,.circle{
+    position: absolute;
+    bottom: 15vw;
+    left: 43vw;
+    /*width: 260px;
+    height: 260px;*/
+    width: 10vw;
+    height: 10vw;
+}
+    
+    #social-media img{
+    width: 2vw;
+}
+    #social-media{
+    width: 13vw;
+    margin: -15vw 41vw 0;
+}   
     
 }
