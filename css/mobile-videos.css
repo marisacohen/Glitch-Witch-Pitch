@@ -1,0 +1,10 @@
+body{
+    background-image: url(../images/backgrounds/CellphoneTheater.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#videoGallery{
+    position: relative;
+    top: 20vh;
+}

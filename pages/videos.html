@@ -10,7 +10,7 @@
     </head>
     <body>
         <nav>  
-                        <div id="logo"><a href="../index.html"><img src="../images/home_page/Glitch-Witch-Logo-Standing-Bex.png" alt="Glitch Witch Logo"/></a></div>
+                        <div id="logo"><a href="../index.html"><img src="../images/Glitch-Witch-Logo-Standing-Bex.png" alt="Glitch Witch Logo"/></a></div>
                     	<div class="nav-links"><a href="the-story.html"><img src="../images/navigation_buttons/navbarTheStory.png" alt="The Story"/></a></div>
                     	<div class="nav-links"><a href="characters.html"><img src="../images/navigation_buttons/navbarCharacters.png"alt="Characters"/></a></div>
 						<div class="nav-links"><a href="episodes.html"><img src="../images/navigation_buttons/navbarEpisodes.png" alt="Episodes"/></a></div>
@@ -19,16 +19,25 @@
                     	<div class="nav-links" id="games"><a href="games.html"><img src="../images/navigation_buttons/navbarGames.png" alt="Games" /></a></div>
                     	<div class="nav-links"><a href="contact.html"><img src="../images/navigation_buttons/navbarCreatorContact.png" alt="Contact" /></a></div>
                 </nav>
-        <h1>Videos</h1>
-    <div class="videoGallery">
+        <div id="mobilePlaylist">
+            <a href="videos/glitch-witch-promo.html"><img class="thumb" src="../images/TempArt/Glitchpromothumbnail.jpg" alt="Glitch Witch Promo" /><div class="vidDescription">My Title</div></a>
+            <a href><img class="thumb" src="../images/TempArt/Glitchpromothumbnail.jpg" alt="Glitch Witch Promo" /><div class="vidDescription">My Title</div></a>
+        </div>
+        
+        <div class="videoGallery">
 				<div id="videoPlayer"></div>
         
-                <div class="thumbnail-column">
-                   <img class="thumb" src="../images/TempArt/Glitchpromothumbnail.jpg" alt="Glitch Witch Promo" data-video-id="t4TIKAqjbB8" /></div>
+        <div id="playlist">
+                   <img class="thumb" src="../images/TempArt/Glitchpromothumbnail.jpg" alt="Glitch Witch Promo" data-video-id="t4TIKAqjbB8" />
+                    
+                    <img class="thumb" src="../images/TempArt/Glitchpromothumbnail.jpg" alt="Glitch Witch Promo" data-video-id="" />
+        </div>
         </div>
         
         <script src="../js/jquery-1.11.0.min.js"></script>
         <script src="https://www.youtube.com/iframe_api"></script>
         <script src="../js/youtube-api-customization.js"></script>
+        <script src="../js/mobile-video-resizing.js"></script>
+        
     </body>
 </html>
